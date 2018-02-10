@@ -1,6 +1,6 @@
 # PVSnesLib is an open and free library to develop programs for Nintendo SNES
 
-![PVSnesLib](portabledev.com/wp-content/uploads/2018/02/pvsneslib_logo.jpg)
+![PVSnesLib](http://portabledev.com/wp-content/uploads/2018/02/pvsneslib_logo.jpg)
 
 PVSneslib is split in 3 parts
 * The library itself provided with full code sources, obj files of each function and a Doxygen documentation (in the docs folder).
