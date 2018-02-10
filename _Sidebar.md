@@ -4,3 +4,4 @@
   1. **[PVSneslib and Programmer-Notepad](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad)**
 
 # Tips #
+  1. **[Tips and Bugs](https://github.com/alekmaul/pvsneslib/wiki/Tips-and-Bugs)**
