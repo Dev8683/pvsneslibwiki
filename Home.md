@@ -7,7 +7,7 @@ PVSneslib is split in 3 parts
 * The tools and compiler (for Windows system only)
 * The examples (sprites, sound, graphics, debug)
 
-Download the complete archive in Download Section.
+Download the complete archive in [Download Section](https://github.com/alekmaul/pvsneslib/wiki/Download).
 
 After you downloaded the PVSneslib archive, check the Wiki Section to get installation instructions and basics tutorials.
 
