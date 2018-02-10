@@ -19,7 +19,7 @@ Good luck!
 
 The first thing you need to do to get you started is downloading the latest versions of devkitSNES and the tools that come with it. This is the core to all/most homebrew programs on the SNES, as it provides the C compiler and linker and various tools.  
 
-You can fin lastest release here: [devkitsnes latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+You can find the lastest release here: [devkitsnes latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
 Put it wherever you like – it doesn’t affect the compilation (you will only need to define it in your PATH), as long as you don’t extract it in a directory that contains spaces (eg, ‘**C:/snesdev/devkitSnes**’ would be fine).  
 
@@ -48,31 +48,33 @@ Msys need to be add to Windows Path because lot's of msys binary files are neede
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
 I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path textbox to add the msys/bin directory. Do a Right Click on Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
 
-
-{{:pn_tools_04.jpg?400}}
+![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
 Choose the Path entrry to add **c:\snesdev\msys\bin** at the end of the line.  
 
-{{:pn_tools_05.jpg?400}}
-==== Emulators ====
+![Path2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_05.jpg)
 
-Download emulators to test your homebrews and put them in the emulators directory (see unzipped devkitsnes, you will have the directory ‘**C:/snesdev/emulators**’).
+
+#### Emulators  
+
+Download emulators to test your homebrews and put them in the emulators directory (see unzipped devkitsnes, you will have the directory ‘**C:/snesdev/emulators**’).  
 
 [[http://byuu.org/bsnes/|Download bsnes]]
 
 [[http://nocash.emubase.de/sns.htm|Download no$sns]]
 
-===== Step 2: Installing the library PVSnesLib =====
+### Step 2: Installing the library PVSnesLib
 
-Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, ‘**C:/snesdev/PVSnesLib**’ would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.
+Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, ‘**C:/snesdev/PVSnesLib**’ would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
 
-[[currentversion_en|Download PVSnesLib]]
+You can find the lastest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [[http://www.pnotepad.org/download/|‘Programmer’s Notepad’]] (an IDE), though they don’t necessarily affect the functionality of libSnes.
+It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [[http://www.pnotepad.org/download/|‘Programmer’s Notepad’]] (an IDE), though they don’t necessarily affect the functionality of PVSneslib.
 
-[[currentversion_en|Download Snes examples]]
+You can find the lastest release here: [snes examples latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-At the end, you must have something like that :
+At the end, you must have something like that :  
+```
   c:\snesdev
   .........\devkitSnes
   .................\bin
@@ -85,64 +87,65 @@ At the end, you must have something like that :
   .........\msys
   .........\snes-examples
   c:\python27
+```
 
-====== Let's start compiling with Programmer's Notepad ======
+##### Let's start compiling with Programmer's Notepad
 
-We will use template example to test how our PVSnesLib library is installed. The template directory is shipped with PVSnesLib.
+We will use template example to test how our PVSnesLib library is installed. The template directory is shipped with PVSnesLib.  
 
 
-==== Configuring tools ====
+#### Configuring tools
 
 We will begin with a Programmer's Notepade Tools menu configuration to have the make command with **Alt+&** shortcut on our keyboard (but you are free to use something else :-D).
 First of all, go to **Tools/Options** Menu and select Tools entry to the left. On the **Scheme** dropdown list, select **None** to have the "global tools" selections.
 
-{{:pn_tools_01.jpg?nolink&400}}
+![PNT1](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_01.jpg)
 
-Click on **Add** button to the right and type text as in the following screen.
+Click on **Add** button to the right and type text as in the following screen.  
 
-{{:pn_tools_02.jpg?nolink}}
+![PNT2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_02.jpg)
 
-Do same thing for the **make clean** entry, you just have to add the word **clean** in **parameters** textbox, and add shorcut **Alt+é** on your keyboard (or what you want ;-)).
-That's all, now you have the //make// and //make clean// command defined.
+Do same thing for the **make clean** entry, you just have to add the word **clean** in **parameters** textbox, and add shorcut **Alt+é** on your keyboard (or what you want ;-)).  
+That's all, now you have the _make_ and _make clean_ command defined.  
 
-{{:pn_tools_03.jpg?nolink&400}}
+![PNT3](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_03.jpg)
 
-==== Editing Path and compiling ====
+#### Editing Path and compiling
 
-With Programmer's Notepad menu **File/Open project(s)**, open the //template.pnproj// file that is in the psneslib **template** directory.
-You will see 3 files on the Project Window.
+With Programmer's Notepad menu **File/Open project(s)**, open the //template.pnproj// file that is in the psneslib **template** directory.  
+You will see 3 files on the Project Window.  
+* hdr.asm is the file that defined the future snes rom definition.
+* Makefile is the file use to make the .sfc file.
+* template.c is the C source file.
 
-  * hdr.asm is the file that defined the future snes rom definition.
-  * Makefile is the file use to make the .sfc file.
-  * template.c is the C source file.
+Open **Makefile** and change the path to use the correct directory for your snesdev installation. Example below show a **D:/devperso/snesdevkit** root entry for my snes developments, if you have **c:\snesdev**, you just have to change it to **/c/snesdev**. Same thing for your devkitsnes entry.  
 
-Open **Makefile** and change the path to use the correct directory for your snesdev installation. Example below show a **D:/devperso/snesdevkit** root entry for my snes developments, if you have **c:\snesdev**, you just have to change it to **/c/snesdev**. Same thing for your devkitsnes entry.
-
-<code make>
+```
   # path to snesdev root directory (for emulators, devkitsnes, libsnes)
   export DEVKITSNES := /d/devperso/snesdevkit/
   
   # path to devkitsnes root directory for compiler
   export DEVKIT65XX := /d/devperso/snesdevkit/devkitsnes
-</code>
+```
 
 Now, just do a //make clean// command (with the shortcut you configured below, for example Alt+é for me).
 You must see a new Output window with the result of your make clean command.
 
-<code typoscript>
+```
   > "make" clean
   clean ...
   
   > Process Exit Code: 0
   > Time Taken: 00:00
-</code>
+```
 
 If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our [[http://www.portabledev.com/smf/|PVSnesLib forum]], we will help you as soon as possible.
 
 Ok, now your template directory is cleaned, you can run the //make// command (with shortcut, remember ).
 You will have the following things in your Programmer's Notepad output window.
 
-<code typoscript>> "make.exe" 
+```
+> "make.exe" 
 Compiling to .ps ... template.c
 816-tcc -I/d/snesdev/devkitsnes/include   -I/d/snesdev/pvsneslib/include -I/d/snesdev/pvsneslib/template/  -Wall 
   -c template.c -o template.ps
@@ -257,8 +260,8 @@ rm template.asm template.ps
 
 > Process Exit Code: 0
 > Time Taken: 00:01
-</code>
+```
 
-That's all, you compiled your first program that can do nothing but it's a first step !. 
+That's all, you compiled your first program that can do nothing but it's a first step !.  
 
 Welcome to PVSnesLib world and enjoy doing some homebrews for your Snes :-P !
