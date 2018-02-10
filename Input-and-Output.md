@@ -64,7 +64,7 @@ But _only text color is important_.
 
 Color is designed with the Red, Green and Blue parameters.
 
-![colors](http://www.portabledev.com/wp-content/uploads/2018/02/200px-additivecolor.svg.png)
+![colors](http://www.portabledev.com/wp-content/uploads/2018/02/200px-additivecolor.svg_.png)
 
 Each parameter must be a number between **0 and 31**. And you must call function **RGB15** to have the final correct color.  
 So, **RGB15(0,0,0)** is the black color and **RGB15(31,31,31)** is the white color.  
