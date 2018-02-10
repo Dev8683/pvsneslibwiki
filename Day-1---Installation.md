@@ -25,28 +25,29 @@ Put it wherever you like – it doesn’t affect the compilation (you will only 
 
 #### Python
 
-To use c source code optimizer, you also need to have **Python** on your PC. Just download it from Python website and unzip it in **c:\python27**.
+To use c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **c:\python27**.
 
-[[http://www.python.org/download/|Download Python]]
+[Python 2.7](http://www.portabledev.com/download/12/)
 
 If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change first line to use the correct directory.  
-...
+```
   #!/c/Python27/python <- change here
   import sys
   import re
   import os
-...
+```
 
 #### Msys
 
 Download **msys** to use Unix like environment and extract it in you snes directory. (eg, ‘**C:\snesdev\**’ would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
-[[http://www.portabledev.com/modules/download_gallery/dlc.php?file=484&id=1333951774|Download msys]]
+[msys 1.0.17](http://www.portabledev.com/download/11/)
 
-Msys need to be add to Windows Path because lot's of msys binary files are needed when we are going to compile.
+Msys need to be add to Windows Path because lot's of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
 I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path textbox to add the msys/bin directory. Do a Right Click on Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
+
 
 {{:pn_tools_04.jpg?400}}
 
