@@ -4,6 +4,7 @@
   1. **[PVSneslib and Programmer Notepad](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad)**
 
 # Programming #
+  1. **[Introduction](https://github.com/alekmaul/pvsneslib/wiki/Introduction)**
   1. **[Input and Output](https://github.com/alekmaul/pvsneslib/wiki/Input-and-Output)**
 
 # Tips #
