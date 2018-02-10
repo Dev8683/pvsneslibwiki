@@ -1,4 +1,4 @@
-#### Configuring tools
+# Configuring tools
 
 We will begin with a Programmer's Notepade Tools menu configuration to have the make command with **Alt+&** shortcut on our keyboard (but you are free to use something else :-D).
 First of all, go to **Tools/Options** Menu and select Tools entry to the left. On the **Scheme** dropdown list, select **None** to have the "global tools" selections.
@@ -14,7 +14,7 @@ That's all, now you have the _make_ and _make clean_ command defined.
 
 ![PNT3](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_03.jpg)
 
-#### Editing Path and compiling
+## Editing Path and compiling
 
 With Programmer's Notepad menu **File/Open project(s)**, open the //template.pnproj// file that is in the psneslib **template** directory.  
 You will see 3 files on the Project Window.  
