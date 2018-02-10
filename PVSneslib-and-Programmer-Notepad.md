@@ -1,4 +1,4 @@
-# Configuring tools
+## Configuring tools
 
 We will begin with a Programmer's Notepade Tools menu configuration to have the make command with **Alt+&** shortcut on our keyboard (but you are free to use something else :-D).
 First of all, go to **Tools/Options** Menu and select Tools entry to the left. On the **Scheme** dropdown list, select **None** to have the "global tools" selections.
