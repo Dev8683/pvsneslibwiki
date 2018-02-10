@@ -39,37 +39,39 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
 
 #### Msys
 
-Download **msys** to use Unix like environment and extract it in you snes directory. (eg, ‘**C:\snesdev\**’ would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
+Download **msys** to use Unix like environment and extract it in you snes directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
 [msys 1.0.17](http://www.portabledev.com/download/11/)
 
 Msys need to be add to Windows Path because lot's of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path textbox to add the msys/bin directory. Do a Right Click on Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
+I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path textbox to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
-Choose the Path entrry to add **c:\snesdev\msys\bin** at the end of the line.  
+Choose the Path entry to add **c:\snesdev\msys\bin** at the end of the line.  
 
 ![Path2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_05.jpg)
 
 
 #### Emulators  
 
-Download emulators to test your homebrews and put them in the emulators directory (see unzipped devkitsnes, you will have the directory ‘**C:/snesdev/emulators**’).  
+Download emulators to test your homebrews and put them in the emulators directory (see unzipped devkitsnes, you will have the directory **C:/snesdev/emulators**).  
 
-[[http://byuu.org/bsnes/|Download bsnes]]
+[bsnesplus beta](http://revenant1.net/bsnes-plus-benny-win64.zip)
 
-[[http://nocash.emubase.de/sns.htm|Download no$sns]]
+[bsnesplus](https://github.com/devinacker/bsnes-plus/releases)
+
+[no$sns](http://problemkaputt.de/sns.htm)
 
 ### Step 2: Installing the library PVSnesLib
 
-Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, ‘**C:/snesdev/PVSnesLib**’ would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
+Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, **C:/snesdev/PVSnesLib** would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
 
 You can find the lastest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [[http://www.pnotepad.org/download/|‘Programmer’s Notepad’]] (an IDE), though they don’t necessarily affect the functionality of PVSneslib.
+It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE), thought they don’t necessarily affect the functionality of PVSneslib.
 
 You can find the lastest release here: [snes examples latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
@@ -139,7 +141,8 @@ You must see a new Output window with the result of your make clean command.
   > Time Taken: 00:00
 ```
 
-If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our [[http://www.portabledev.com/smf/|PVSnesLib forum]], we will help you as soon as possible.
+If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our 
+[Portabledev Forum](http://www.portabledev.com/smf/index.php) or here in [Issues Part](https://github.com/alekmaul/pvsneslib/issues), we will help you as soon as possible.
 
 Ok, now your template directory is cleaned, you can run the //make// command (with shortcut, remember ).
 You will have the following things in your Programmer's Notepad output window.
