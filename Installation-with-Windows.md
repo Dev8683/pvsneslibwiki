@@ -1,5 +1,3 @@
-# Installing a development environment with Windows
-
 You will find here detailed instruction for installing libSnes on Windows environment.  
 To use PVSnesLib, you will need :  
   * msys  
