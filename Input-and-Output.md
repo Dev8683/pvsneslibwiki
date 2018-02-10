@@ -98,15 +98,15 @@ pvsneslibfont.pic: pvsneslibfont.bmp
 
 ## Input
 
-Currently, the only input managed with _PVSneslib_ is the **Snes joypad**.
-
+Currently, the only input managed with _PVSneslib_ is the **Snes joypad**.  
+```
     __--L--_________________--R--__           Button Colors:
    /    _                          \   PAL and Japan    North America
   |   _| |_                  (X)    |   X = Blue         X = Gray
   |  |_   _|  SLCT STRT   (Y)   (A) |   Y = Green        Y = Gray
   |    |_|                   (B)    |   A = Red          A = Purple
    \_________.-----------._________/    B = Yellow       B = Purple
-
+```
 
 _PVSnesLib_ can handle the **two** Snes pads, which are identified with number **Bold Text**0 or **1**.  
  
