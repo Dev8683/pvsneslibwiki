@@ -33,20 +33,21 @@ Here is a table showing how we can handle that :
 
 Last thing to take into account is that you don’t want the background color of your sprite to be visible.  
 
-If you have a round sprite, like a ball, you wouldn’t want the square border to show. In order to do such behaviour, the first color of the psrite palette is used for the background to be ‘removed’, or rather set as the transparent color (only 1 transparent color per sprite).
+If you have a round sprite, like a ball, you wouldn’t want the square border to show. In order to do such behaviour, the first color of the psrite palette is used for the background to be ‘removed’, or rather set as the transparent color (only 1 transparent color per sprite).  
 
-You have to choose your transparent color : the best is magenta, as you don’t use it very often (red : 255, green : 0, blue : 255), or some use black ...
+You have to choose your transparent color : the best is magenta, as you don’t use it very often (red : 255, green : 0, blue : 255), or some use black ...  
  
-{{::soprite_color.png?nolink&300 |}}
+![color](http://www.portabledev.com/wp-content/uploads/2018/02/soprite_color.png)
 
 Here are some common colors used for transparency:
-^ Color name ^ R,G,B ^
-| Magenta | 255,0,255  |
-| “Blackread” | 1,0,0 |
-| Off Black | 1,1,1 |
-| Off white | 254,254,254 |
+|Color name|R,G,B|  
+|----------|-----|  
+| Magenta | 255,0,255  |  
+| “Blackread” | 1,0,0 |  
+| Off Black | 1,1,1 |  
+| Off white | 254,254,254 |  
 
-===== OAM structure =====
+## OAM structure
 
 The Object Attribute Memory are two tables which control the position, size, mirroring, palette, and priority of sprites.  
 
@@ -80,37 +81,36 @@ Now that you've consumed the above information, realize that it is not completel
   1024    16-23    (0,16) (8,16) (16,16) (24,16) <Unused--room for 12 more tiles>
   1536    24-31    (0,24) (8,24) (16,24) (24,24) <Unused>
 
-If the first sprite, shown in the above table, started at offset 0, the next sprite would start at offset 128 (the Character Number, in OAM, would be 4); the third sprite would start at offset 256 (Character #8), and the fourth sprite would start at offset 384 (Character #12). 
+If the first sprite, shown in the above table, started at offset 0, the next sprite would start at offset 128 (the Character Number, in OAM, would be 4); the third sprite would start at offset 256 (Character #8), and the fourth sprite would start at offset 384 (Character #12).  
 
-If a fifth sprite was desired, the pattern would repeat and it would be located at offset 2048 (Character #64). 
+If a fifth sprite was desired, the pattern would repeat and it would be located at offset 2048 (Character #64).  
 
-Similarly, when using 16x16 sprites, there will be 8 sprites interleaved, and the ninth sprite will have to start after them at offset 1024.  Finally, 64x64 sprites have only two sprites interleaved. 
+Similarly, when using 16x16 sprites, there will be 8 sprites interleaved, and the ninth sprite will have to start after them at offset 1024.  Finally, 64x64 sprites have only two sprites interleaved.  
 
-====== Sprites with PVSnesLib ======
 
-===== Converting with gfx2snes =====
+## Converting with gfx2snes
 
-You can use **gfx2snes**, shipped with **devkitsnes** to convert your bitmap files into a correct format for PVSnesLib. Remember that the size must be a multiple of 8 pixels 8x8, 16x16, 32x32, and so on ... The table above gave you the correct size you can use for your sprites at a specific moment of your homebrew.
+You can use **gfx2snes**, shipped with **devkitsnes** to convert your bitmap files into a correct format for PVSnesLib. Remember that the size must be a multiple of 8 pixels 8x8, 16x16, 32x32, and so on ... The table above gave you the correct size you can use for your sprites at a specific moment of your homebrew.  
 
-As you can see above, the sprite graphics are arranged vertically to avoid problem during conversion.
+As you can see above, the sprite graphics are arranged vertically to avoid problem during conversion.  
 
-Here is an example of a makefile instruction to convert a sprite of 16 pix width / height with **gfx2snes**.
+Here is an example of a makefile instruction to convert a sprite of 16 pix width / height with **gfx2snes**.  
 
-<code make>
+```
 #---------------------------------------------------------------------------------
 sprites.pic: sprites.bmp
 	@echo convert bitmap ... $(notdir $@)
 	$(GFXCONV) -gs16 -pc16 -po16 -n $<
-</code>
+```
 
-  gs16 because we have 16 pix width 
-  pc16 because we can only use 16 colors
-  po16 because we are going to use only one palette of 16 colors
-  n because we do not have a border around the sprites
+  gs16 because we have 16 pix width   
+  pc16 because we can only use 16 colors  
+  po16 because we are going to use only one palette of 16 colors  
+  n because we do not have a border around the sprites  
   
-Then, create a **data.asm** file with the converted file include in it, like you can see in **PVSnesLib** examples. This file will be included with your project and linked with the graphics.
+Then, create a **data.asm** file with the converted file include in it, like you can see in **PVSnesLib** examples. This file will be included with your project and linked with the graphics.  
 
-<code asm>
+```
 .include "hdr.asm"
 
 .section ".rodata1" superfree
@@ -119,102 +119,98 @@ gfxpsrite_end:
 
 palsprite: .incbin "sprites.pal"
 .ends
-</code>
+```
 
-During initialization process in your C files, you will have to declare some external variables to allow functions to know which graphic sprites you are going to use, regarding the name you entered in your **data.asm** file.
+During initialization process in your C files, you will have to declare some external variables to allow functions to know which graphic sprites you are going to use, regarding the name you entered in your **data.asm** file.  
 
-<code c>
+```
 extern char gfxpsrite, gfxpsrite_end;
 extern char palsprite;
-</code>
+```
 
-===== Init the sprites =====
+## Init the sprites
 
-**PVSnesLib** used an internal table to strore sprites OAM. This table is named **oamMemory** and it is used to address the two OAM tables of the SNES.
-You don't have to declare another table to handle sprite OAM, and the include files shipped with **PVSnesLib** allows your homebrew to know the oamMemory table.
-<code C>
+**PVSnesLib** used an internal table to strore sprites OAM. This table is named **oamMemory** and it is used to address the two OAM tables of the SNES.  
+You don't have to declare another table to handle sprite OAM, and the include files shipped with **PVSnesLib** allows your homebrew to know the oamMemory table.  
+```
 unsigned char oamMemory[128*4+8*4]; // to address oma table low and high
-</code>
+```
 
-During **consoleInit()** process, this table is init, so don't care about that LOL ! The **consoleInit** does this call :
+During **consoleInit()** process, this table is init, so don't care about that LOL ! The **consoleInit** does this call :  
 
-<code C>
+```
   // Init sprites
   oamInit();
-</code>
+```
 
-This function also put all the sprites outside the screen.
+This function also put all the sprites outside the screen.  
 
-The only thing that you need to do is to init graphics, palette and sprite size. The **oamInitGfxSet()** function does that, here is a common process to do such thing :
+The only thing that you need to do is to init graphics, palette and sprite size. The **oamInitGfxSet()** function does that, here is a common process to do such thing :  
 
-<code C>
+```
     // Initialize SNES 
     consoleInit();
 	
     // Init Sprites gfx and palette with default size of 16x16
     oamInitGfxSet(&gfxpsrite, (&gfxpsrite_end-&gfxpsrite), &palsprite, 0, 0x4000, OBJ_SIZE16);
-</code>
+```
 
-The parameters are :
+The parameters are :  
 
-**&gfxpsrite**  address of sprite graphics
+**&gfxpsrite**  address of sprite graphics  
 
-**(&gfxpsrite_end-&gfxpsrite)** length of sprites graphics (so we did subtraction of end adress and beginning addres, easy isn't it ;-)
+**(&gfxpsrite_end-&gfxpsrite)** length of sprites graphics (so we did subtraction of end adress and beginning addres, easy isn't it ;-)  
 
-**&palsprite** address of palette
+**&palsprite** address of palette  
 
-**0** palette number we are going to use (0 through 8), and remember only 16 colors for each graphics file !
+**0** palette number we are going to use (0 through 8), and remember only 16 colors for each graphics file !  
 
-**0x4000** address in SNES VRAM where we are going to put the graphics (it's a 8K word step, be careful !)
+**0x4000** address in SNES VRAM where we are going to put the graphics (it's a 8K word step, be careful !).  
 
-**OBJ_SIZE16** size of sprite, you can use **OBJ_SIZE8**, **OBJ_SIZE16** and **OBJ_SIZE32**. Remember that this parameter is the **Small** size attribute (see above the table about Sprite size).
+**OBJ_SIZE16** size of sprite, you can use **OBJ_SIZE8**, **OBJ_SIZE16** and **OBJ_SIZE32**. Remember that this parameter is the **Small** size attribute (see above the table about Sprite size).  
 
 
-Also, if you put all graphics in VRAM during one process (with a DMA copy for example) and want to change only the size and address of sprites, you can use the function **oamInitGfxAttr()** with two paremeters : the address and the size.
+Also, if you put all graphics in VRAM during one process (with a DMA copy for example) and want to change only the size and address of sprites, you can use the function **oamInitGfxAttr()** with two paremeters : the address and the size.  
 
-===== Drawing the sprites =====
+## Drawing the sprites
 
-Drawing a sprite on screen is the same thing that tranfering **OAM** variables to **SNES OAM**. This tranfert can only be done during Vblank. But don't care about that, PVSnesLib does that for you :-D. the only thing to do is the definition of each sprite attribute in **OAM** variables.
+Drawing a sprite on screen is the same thing that tranfering **OAM** variables to **SNES OAM**. This tranfert can only be done during Vblank. But don't care about that, PVSnesLib does that for you :-D. the only thing to do is the definition of each sprite attribute in **OAM** variables.  
 
-The function **oamSet()** does that : oamSet(id,  xspr, yspr, priority, hflip, vflip, gfxoffset, paletteoffset) .
+The function **oamSet()** does that : oamSet(id,  xspr, yspr, priority, hflip, vflip, gfxoffset, paletteoffset) .  
 
-<code C>
+```
 	oamSet(0,  monster.x, monster.y, 0, 0, 0, 0, 0); 
-</code>
+```
 
-^ parameters ^ description ^
-| id | sprite number : be careful, must be a multiply by 4. because each sprite has 4 parameters in OAM memory, so 1st one is 0, second is 4, third is 8, and so on ... |
-| xspr | x coordinate : 0 to 255 |
-| yspr | y coordinate : 0 to 255 |
-| priority | priority relative to BG : 0 for Low and 3 is the highest |
-| hflip | 0 or 1 to flip or not horizontally |
-| vflip | 0 or 1 to flip or not vertically |
-| gfxoffset | the graphic offset, see the explanation above to compute the correct value |
-| paletteoffset |0 certainly, except if you have another palette number to use |
+| parameters|description|  
+|-----------|-----------|
+| id | sprite number : be careful, must be a multiply by 4. because each sprite has 4 parameters in OAM memory, so 1st one is 0, second is 4, third is 8, and so on ... |  
+| xspr | x coordinate : 0 to 255 |  
+| yspr | y coordinate : 0 to 255 |  
+| priority | priority relative to BG : 0 for Low and 3 is the highest |  
+| hflip | 0 or 1 to flip or not horizontally |  
+| vflip | 0 or 1 to flip or not vertically |  
+| gfxoffset | the graphic offset, see the explanation above to compute the correct value |  
+| paletteoffset |0 certainly, except if you have another palette number to use |  
 
-The another function to use is oamSetEx() to define if the sprite is shown or not, and of course its size.
+The another function to use is oamSetEx() to define if the sprite is shown or not, and of course its size.  
 
-<code C>
+```
 	oamSetEx(0, OBJ_SMALL, OBJ_SHOW);
-</code>
+```
 
 The first parameter is the sprite id (don't forget , it is multiply by 4 !).
-For the next parameters, you can use **OBJ_SMALL** or **OBJ_LARGE** for the size and **OBJ_SHOW** or **OBJ_HIDE** to see or not the sprite :-P
+For the next parameters, you can use **OBJ_SMALL** or **OBJ_LARGE** for the size and **OBJ_SHOW** or **OBJ_HIDE** to see or not the sprite :-P  
 
+## Moving the sprites
 
+You have two ways to move a sprite. You can use the **oamSet()** function and changing the x and y coordinates and you can also use the **oamSetXY()** function with only 3 parameters : **id** (hum, remember how to handle it now, 0, 4 , 8 and so on ;-) ), x and y coordinates.  
 
-===== Moving the sprites =====
+Of course, if you need to change also the fliping of the sprite, use the **oamset** function, like we do in the animated sprite example.  
 
-You have two ways to move a sprite. You can use the **oamSet()** function and changing the x and y coordinates and you can also use the **oamSetXY()** function with only 3 parameters : **id** (hum, remember how to handle it now, 0, 4 , 8 and so on ;-) ), x and y coordinates.
-
-Of course, if you need to change also the fliping of the sprite, use the **oamset** function, like we do in the animated sprite example
-
-<code C>
+```
 	// Wait for nothing :P
 	while(1) {
-		// Refresh pad values
-		scanPads();
-		
 		// Get current #0 pad
 		pad0 = padsCurrent(0);
 		
@@ -251,11 +247,11 @@ Of course, if you need to change also the fliping of the sprite, use the **oamse
 		// Wait VBL 'and update sprites too ;-) )
 		WaitForVBlank();
 	}
-</code>
+```
 
-**That's all for sprite tutorial, you are now able to move objects on SNES screen !** LOL
+**That's all for sprite tutorial, you are now able to move objects on SNES screen !** LOL  
 
-{{ :animatedsprite-20120501-101156.png?nolink&200 |}}
+![Anim](http://www.portabledev.com/wp-content/uploads/2018/02/animatedsprite-20120501-101156.png)
 
 ----
 _Some parts from Qwertie's "SNES Documentation" and Matthew Callis's "Sprites in SNES development"_
