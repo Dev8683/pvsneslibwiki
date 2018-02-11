@@ -108,7 +108,7 @@ Currently, the only input managed with _PVSneslib_ is the **Snes joypad**.
    \_________.-----------._________/    B = Yellow       B = Purple
 ```
 
-_PVSnesLib_ can handle the **two** Snes pads, which are identified with number **Bold Text**0 or **1**.  
+_PVSnesLib_ can handle the **two** Snes pads, which are identified with number **0** or **1**.  
  
 To get the values for internal pad management, you must call the scanPads function. It will update the state for the two pads.  
 
