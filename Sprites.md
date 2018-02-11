@@ -64,22 +64,22 @@ The second table is 32 bytes and has 2 bits for each sprite (each byte contains 
   bit 0/2/4/6 of byte OBJ/4: x   x: X most significant bit coordinate
   bit 1/3/5/7 of byte OBJ/4: s   s: size toggle bit 
 
-===== Sprites in VRAM =====
+### Sprites in VRAM
 
 Sprites are interleaved in Video RAM. In other words, when using 32x32 tiles, there would be 3 more sprites stored in that "unused" space. 
 
 When the sprites are larger than 8x8, they are arranged in columns, followed by rows of 8x8 tiles.  For example, a 32x32 sprite is stored like this:
 
-  Byte Offset  0     32    64     96     128   160   192    224    256    ... et cetera.
-  Tile Coord   (0,0) (8,0) (16,0) (24,0) (0,8) (8,8) (16,8) (24,8) (0,16) ... and so on.
+  Byte Offset  0     32    64     96     128   160   192    224    256    ... et cetera.  
+  Tile Coord   (0,0) (8,0) (16,0) (24,0) (0,8) (8,8) (16,8) (24,8) (0,16) ... and so on.  
 
-Now that you've consumed the above information, realize that it is not completely correct.  The SNES has one more display quirk that is thrown into the mix: all of the rows must be stored 16 tiles apart (i.e. 512 bytes, or 256 words.)  This means that, if there was one 32x32 sprite in VRAM, it would have to be stored like this:
+Now that you've consumed the above information, realize that it is not completely correct.  The SNES has one more display quirk that is thrown into the mix: all of the rows must be stored 16 tiles apart (i.e. 512 bytes, or 256 words.)  This means that, if there was one 32x32 sprite in VRAM, it would have to be stored like this:  
 
-  Offset  Y-coord. Tile Coord
-  0       0-7      (0, 0) (8, 0) (16, 0) (24, 0) <Unused--room for 12 more tiles>
-  512     8-15     (0, 8) (8, 8) (16, 8) (24, 8) <Unused--room for 12 more tiles>
-  1024    16-23    (0,16) (8,16) (16,16) (24,16) <Unused--room for 12 more tiles>
-  1536    24-31    (0,24) (8,24) (16,24) (24,24) <Unused>
+  Offset  Y-coord. Tile Coord  
+  0       0-7      (0, 0) (8, 0) (16, 0) (24, 0) <Unused--room for 12 more tiles>  
+  512     8-15     (0, 8) (8, 8) (16, 8) (24, 8) <Unused--room for 12 more tiles>  
+  1024    16-23    (0,16) (8,16) (16,16) (24,16) <Unused--room for 12 more tiles>  
+  1536    24-31    (0,24) (8,24) (16,24) (24,24) <Unused>  
 
 If the first sprite, shown in the above table, started at offset 0, the next sprite would start at offset 128 (the Character Number, in OAM, would be 4); the third sprite would start at offset 256 (Character #8), and the fourth sprite would start at offset 384 (Character #12).  
 
