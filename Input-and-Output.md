@@ -49,7 +49,7 @@ For example, **%d** is used to display integer like **consoleDrawText(1,1,"X=%d"
 To display a string, you must use **%s** and **%c** for a char.  
 For example :  
 ```
-char name[10];
+char name[32];
 
   strcpy(name,"PVSneslib");
   consoleDrawText(1,1,"Name of lib=%s",name);
@@ -138,10 +138,10 @@ so, you can use **if (pad0 & KEY_A)** to know if button A is pressed or **if (pa
 
 Also, **if ( (pad0 & KEY_A) && (pad0 & KEY_X) )** (or **if ( (pad0 & (KEY_A | KEY_X) == (KEY_A | KEY_X) )**) is used to know if button A **and** button X are pressed.   
 
+At least, the pad is refresh during VBL (thanks to VBlank function), so it is no more needed to use **scanPads** function to refresh pad values.  
+
+
 ```
-     // Refresh pad values
-     scanPads();
-		
      // Get current #0 pad
      pad0 = padsCurrent(0);
 		
