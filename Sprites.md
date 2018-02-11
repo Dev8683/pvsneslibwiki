@@ -40,6 +40,7 @@ You have to choose your transparent color : the best is magenta, as you don’t 
 ![color](http://www.portabledev.com/wp-content/uploads/2018/02/soprite_color.png)
 
 Here are some common colors used for transparency:  
+
 |Color name|R,G,B|  
 |----------|-----|  
 | Magenta | 255,0,255  |  
