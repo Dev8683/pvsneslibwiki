@@ -18,15 +18,16 @@ You can have two different sizes each time of screen, the OAM attribute defines 
 
 Here is a table showing how we can handle that :  
 
-^Val^Small^Large^Comment^
-| 0|8x8   |16x16| Caution: |
-| 1|8x8   |32x32| In 224-lines mode, OBJs with 64-pixel height |
-| 2|8x8   |64x64| may wrap from lower to upper screen border. |
-| 3|16x16 |32x32| In 239-lines mode, the same problem applies |
-| 4|16x16 |64x64| also for OBJs with 32-pixel height. |
-| 5|32x32 |64x64| |
-| 6|16x32 |32x64| (undocumented) |
-| 7|16x32 |32x32| (undocumented) |
+|Val|Small|Large|Comment|  
+|---|-----|-----|-------|  
+| 0|8x8   |16x16| Caution: |  
+| 1|8x8   |32x32| In 224-lines mode, OBJs with 64-pixel height |  
+| 2|8x8   |64x64| may wrap from lower to upper screen border. |  
+| 3|16x16 |32x32| In 239-lines mode, the same problem applies |  
+| 4|16x16 |64x64| also for OBJs with 32-pixel height. |  
+| 5|32x32 |64x64| |  
+| 6|16x32 |32x64| (undocumented) |  
+| 7|16x32 |32x32| (undocumented) |  
 
 ## Transparent color
 
