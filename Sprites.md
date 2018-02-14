@@ -217,7 +217,7 @@ You have two ways to move a sprite. You can use the **oamSet()** function and ch
 
 Of course, if you need to change also the fliping of the sprite, use the **oamset** function, like we do in the animated sprite example.  
 
-```js
+```c
 	// Wait for nothing :P
 	while(1) {
 		// Get current #0 pad
