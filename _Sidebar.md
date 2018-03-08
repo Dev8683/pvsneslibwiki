@@ -7,7 +7,7 @@
   1. **[Introduction](https://github.com/alekmaul/pvsneslib/wiki/Introduction)**
   1. **[Input and Output](https://github.com/alekmaul/pvsneslib/wiki/Input-and-Output)**
   1. **[Sprites](https://github.com/alekmaul/pvsneslib/wiki/Sprites)**
-  1. **[Backghrounds](https://github.com/alekmaul/pvsneslib/wiki/Sprites)**
+  1. **[Backgrounds](https://github.com/alekmaul/pvsneslib/wiki/Backgrounds)**
 
 # Tips #
   1. **[Tips and Bugs](https://github.com/alekmaul/pvsneslib/wiki/Tips-and-Bugs)**
