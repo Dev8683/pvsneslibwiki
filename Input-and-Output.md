@@ -70,7 +70,7 @@ Each parameter must be a number between **0 and 31**. And you must call function
 So, **RGB15(0,0,0)** is the black color and **RGB15(31,31,31)** is the white color.  
 For example, to use a red text color with black background, just put :  
 ```
-consoleSetTextCol(RGB15(0,0,0),  RGB15(31,0,0));
+consoleSetTextCol(RGB15(31,0,0), RGB15(0,0,0));
 ```
 
 ### Custom font
