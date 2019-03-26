@@ -1,6 +1,6 @@
 ## Configuring tools
 
-We will begin with a Programmer's Notepade Tools menu configuration to have the make command with **Alt+&** shortcut on our keyboard (but you are free to use something else :-D).
+We will begin with a Programmer's Notepad Tools menu configuration to have the make command with **Alt+&** shortcut on our keyboard (but you are free to use something else :-D).
 First of all, go to **Tools/Options** Menu and select Tools entry to the left. On the **Scheme** dropdown list, select **None** to have the "global tools" selections.
 
 ![PNT1](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_01.jpg)
@@ -9,7 +9,7 @@ Click on **Add** button to the right and type text as in the following screen.
 
 ![PNT2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_02.jpg)
 
-Do same thing for the **make clean** entry, you just have to add the word **clean** in **parameters** textbox, and add shorcut **Alt+é** on your keyboard (or what you want ;-)).  
+Do same thing for the **make clean** entry, you just have to add the word **clean** in **parameters** text box, and add shortcut **Alt+é** on your keyboard (or what you want ;-)).  
 That's all, now you have the _make_ and _make clean_ command defined.  
 
 ![PNT3](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_03.jpg)
@@ -18,8 +18,8 @@ That's all, now you have the _make_ and _make clean_ command defined.
 
 With Programmer's Notepad menu **File/Open project(s)**, open the //template.pnproj// file that is in the psneslib **template** directory.  
 You will see 3 files on the Project Window.  
-* hdr.asm is the file that defined the future snes rom definition.
-* Makefile is the file use to make the .sfc file.
+* hdr.asm is the file that defined the future SNES ROM definition.
+* Makefile is the file used to make the .sfc file.
 * template.c is the C source file.
 
 Open **Makefile** and change the path to use the correct directory for your snesdev installation. Example below show a **D:/devperso/snesdevkit** root entry for my snes developments, if you have **c:\snesdev**, you just have to change it to **/c/snesdev**. Same thing for your devkitsnes entry.  
@@ -167,6 +167,6 @@ rm template.asm template.ps
 > Time Taken: 00:01
 ```
 
-That's all, you compiled your first program that can do nothing but it's a first step !.  
+That's all, you've compiled your first program that does nothing but it's a first step !.  
 
-Welcome to PVSnesLib world and enjoy doing some homebrews for your Snes :-P !
+Welcome to PVSnesLib world and enjoy doing some homebrews for your SNES :-P !
