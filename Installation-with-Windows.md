@@ -1,5 +1,5 @@
-You will find here detailed instruction for installing libSnes on Windows environment.  
-To use PVSnesLib, you will need :  
+Here, You will find  detailed instruction for installing libSnes on a Windows environment.  
+To use PVSnesLib, you will need:  
   * msys  
   * Last version of DevKitSnes 
   * Last version of PVSnesLib binaries  
@@ -17,7 +17,7 @@ Good luck!
 
 The first thing you need to do to get you started is downloading the latest versions of devkitSNES and the tools that come with it. This is the core to all/most homebrew programs on the SNES, as it provides the C compiler and linker and various tools.  
 
-You can find the lastest release here: [devkitsnes latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+You can find the latest release here: [devkitsnes' latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
 Put it wherever you like – it doesn’t affect the compilation (you will only need to define it in your PATH), as long as you don’t extract it in a directory that contains spaces (eg, ‘**C:/snesdev/devkitSnes**’ would be fine).  
 
@@ -37,14 +37,14 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
 
 #### Msys
 
-Download **msys** to use Unix like environment and extract it in you snes directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
+Download **msys** to use Unix like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
 [msys 1.0.17](http://www.portabledev.com/download/11/)
 
-Msys need to be add to Windows Path because lot's of msys binary files are needed when we are going to compile.  
+Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path textbox to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
+I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
@@ -71,7 +71,7 @@ You can find the lastest release here: [pvsneslib latest release](https://github
 
 It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE), thought they don’t necessarily affect the functionality of PVSneslib.
 
-You can find the lastest release here: [snes examples latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+You can find the latest release here: [SNES examples latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
 At the end, you must have something like that :  
 ```
@@ -91,4 +91,4 @@ At the end, you must have something like that :
 
 ##### Let's start compiling with Programmer's Notepad
 
-We will use template example to test how our PVSnesLib library is installed. The template directory is shipped with PVSnesLib.  
+We will use the template example to test how our PVSnesLib library is installed. The template directory is shipped with PVSnesLib.  
