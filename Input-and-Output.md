@@ -1,11 +1,11 @@
-Ouput functions explained in this tutorial day are only functions for _text displaying_. Another tutorial will be done for _background_.  
-We will also talk about input which are, well only _Snes joypads_.
+Output functions explained in this tutorial are only functions for _text displaying_. Another tutorial will be done for _backgrounds_.  
+We will also talk about input which are, well only _SNES joypads_.
 
 ## Output
 
 The output system is managed via a **map of 32x32 characters**. The console functions are used to display text.  
 
-When you want to display a text, you must specify the **x,y coordonates** of the text in this map. 
+When you want to display a text, you must specify the **x,y coordinates** of the text in this map. 
 
 You've got two ways to display text on screen :  
   * using the default map shipped with PVSnesLib (text are sent to display during Vblank)
@@ -14,16 +14,16 @@ You've got two ways to display text on screen :
 ### Init text displaying
  
 The first thing to use the display system is to init the console with the background that will handle the text, and of course, the font to use.  
-We will see later how to customize the font. PVSneslib is shipped with a default font nammed pvsneslibfont.bmp. Just take a look at it to know how characters are.   
+We will see later how to customize the font. PVSneslib is shipped with a default font named pvsneslibfont.bmp. Just take a look at it to know how characters are.   
 
 To init display system, just call **consoleInitText(0,0, &snesfont)**
 where :  
   * the first parameter is the background that will handle the text (0..2)
   * the second one is the palette number (0..16)
-  * the last one is the address of gaphics for font converted with gfx2snes
+  * the last one is the address of graphics for font converted with gfx2snes
 
 ``` 
-.. somewhere where you initialized varables ...
+.. Somewhere where you initialized varables ...
 extern char snesfont;
 
 //---------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ pvsneslibfont.pic: pvsneslibfont.bmp
 
 ## Input
 
-Currently, the only input managed with _PVSneslib_ is the **Snes joypad**.  
+Currently, the only input managed with _PVSneslib_ is the **SNES joypad**.  
 ```
     __--L--_________________--R--__           Button Colors:
    /    _                          \   PAL and Japan    North America
@@ -108,7 +108,7 @@ Currently, the only input managed with _PVSneslib_ is the **Snes joypad**.
    \_________.-----------._________/    B = Yellow       B = Purple
 ```
 
-_PVSnesLib_ can handle the **two** Snes pads, which are identified with number **0** or **1**.  
+_PVSnesLib_ can handle the **two** SNES pads, which are identified with number **0** or **1**.  
  
 To get the values for internal pad management, you must call the scanPads function. It will update the state for the two pads.  
 
