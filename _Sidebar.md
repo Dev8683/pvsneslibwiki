@@ -2,6 +2,7 @@
 
   1. **[Installation with Windows](https://github.com/alekmaul/pvsneslib/wiki/Installation-with-Windows)**
   1. **[PVSneslib and Programmer Notepad](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad)**
+  1. **[First steps with No$sns emulator](https://github.com/alekmaul/pvsneslib/wiki/First-steps-with-No$sns-emulator)**
 
 # Programming #
   1. **[Introduction](https://github.com/alekmaul/pvsneslib/wiki/Introduction)**
