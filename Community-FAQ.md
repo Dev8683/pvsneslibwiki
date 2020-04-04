@@ -22,7 +22,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 **[Common errors](#CommonErrorsSection)**
 
 - [What is CHECH_HEADERS error ?](#CommonErrorsSection_1)
-- [Colors of my loaded picture are false](#CommonErrorsSection_2)
+- [Colors of my loaded picture are wrong](#CommonErrorsSection_2)
 - [I get FIX_LABELS error when i build my project](#CommonErrorsSection_3)
 - [Can i load sprites in 0x0000 ?](#CommonErrorsSection_4)
 - [Why HDMA channel 0 doesn't work ?](#CommonErrorsSection_5)
@@ -30,6 +30,9 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [My music has some glitch during playing](#CommonErrorsSection_7)
 - [Programmer's Notepad add text anywhere when i compile](#CommonErrorsSection_8)
 
+**[Maps](#MapsSection)**
+
+- [How to create maps with 16x16 tiles ?](#MapsSection_1)
 ---
 
 ## <a name="MiscSection"/>Miscellaneous
@@ -124,7 +127,7 @@ Remember you that we have a lot of constraints on SNES and each parameter of the
 
 Your game have to be build with same parameters than we have in PVSnesLib header. This is because .obj files from the library are embedded with .obj files of you project which contains its own header too. It is an improvement to do with PVSnesLib!
 
-### <a name="CommonErrorsSection_2"/>Colors of my loaded picture are false
+### <a name="CommonErrorsSection_2"/>Colors of my loaded picture are wrong
 
 It is an issue with your color palette. We do not recommend to use MS Paint which mix color strangly. You can use [Graphics Gale](https://graphicsgale.com/us/) software if you want to edit easily your colors.
 This is a sample when editing sprite with MS Paint from DynamicSprite sample:
@@ -270,3 +273,11 @@ This is because you didn't respect snesmod requirements! It should be very usefu
 ### <a name="CommonErrorsSection_8"/>Programmer's Notepad add text anywhere when i compile
 
 You will note it when your project will give strange error during compilation. This is because some pieces of code are paste anywhere. In this case, save your project and close Programmer's Notepad. Open the file that don't compile **with an other tool** (like a simple Notepad) to remove bad lines and save it. Then you can continue with Programmer's Notepad software.
+
+
+## <a name="MapsSection"/>Maps
+
+### <a name="MapsSection_1"/>How to create maps with 16x16 tiles ?
+
+It is not possible to load maps with 16x16 tiles with the existing version of gfx2snes. You need to use 8x8 tiles or update the tool !
+The "-gs" parameter (for "graphic size") in gfx2snes is only applied to sprites.
