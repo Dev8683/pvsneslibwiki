@@ -29,6 +29,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [Soundbank files are missing in music samples](#CommonErrorsSection_6)
 - [My music has some glitch during playing](#CommonErrorsSection_7)
 - [Programmer's Notepad add text anywhere when i compile](#CommonErrorsSection_8)
+- [Font system doesn't work with some background mode](#CommonErrorsSection_9)
 
 **[Maps](#MapsSection)**
 
@@ -273,6 +274,10 @@ This is because you didn't respect snesmod requirements! It should be very usefu
 ### <a name="CommonErrorsSection_8"/>Programmer's Notepad add text anywhere when i compile
 
 You will note it when your project will give strange error during compilation. This is because some pieces of code are paste anywhere. In this case, save your project and close Programmer's Notepad. Open the file that don't compile **with an other tool** (like a simple Notepad) to remove bad lines and save it. Then you can continue with Programmer's Notepad software.
+
+### <a name="CommonErrorsSection_9"/>Font system doesn't work with some background mode
+
+The output system is only available for **BG_MODE1**. If you need it in other mode, you need to develop it.
 
 
 ## <a name="MapsSection"/>Maps
