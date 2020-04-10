@@ -3,7 +3,9 @@ We will also talk about input which are, well only _SNES joypads_.
 
 ## Output
 
-The output system is managed via a **map of 32x32 characters**. The console functions are used to display text.  
+The output system is only available for **BG_MODE1**. If you need it in other mode, you need to develop it.
+
+It is managed via a **map of 32x32 characters**. The console functions are used to display text.
 
 When you want to display a text, you must specify the **x,y coordinates** of the text in this map. 
 
