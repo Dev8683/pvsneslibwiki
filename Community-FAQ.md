@@ -34,6 +34,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 **[Maps](#MapsSection)**
 
 - [How to create maps with 16x16 tiles ?](#MapsSection_1)
+- [Backgrounds begin at x = 0 and y = 1](#MapsSection_2)
 ---
 
 ## <a name="MiscSection"/>Miscellaneous
@@ -286,3 +287,12 @@ The output system is only available for **BG_MODE1**. If you need it in other mo
 
 It is not possible to load maps with 16x16 tiles with the existing version of gfx2snes. You need to use 8x8 tiles or update the tool !
 The "-gs" parameter (for "graphic size") in gfx2snes is only applied to sprites.
+
+
+### <a name="MapsSection_2"/>Backgrounds begin at x = 0 and y = 1
+
+It is not a bug and it is linked to a technical constraint :
+
+> Note that many games will set their vertical scroll values to -1 rather than 0. This is because the SNES loads OBJ data for each scanline during the previous scanline. The very first line, though, wouldn't have any OBJ data loaded! So the SNES doesn't actually output scanline 0, although it does everything to render it.
+
+If you want more informations on it, you can consult [this page.](https://wiki.superfamicom.org/backgrounds#toc-3)
