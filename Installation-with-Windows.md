@@ -65,7 +65,7 @@ Download emulators to test your homebrews and put them in the emulators director
 
 ### Step 2: Installing the library PVSnesLib
 
-Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, **C:/snesdev/PVSnesLib** would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
+Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, **C:/snesdev/pvsneslib** would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
 
 You can find the lastest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
@@ -84,6 +84,7 @@ At the end, you must have something like that :
   ..................\template
   ..................\include
   ..................\lib
+  ..................\docs
   .........\msys
   .........\snes-examples
   c:\python27
