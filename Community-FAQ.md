@@ -30,6 +30,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [My music has some glitch during playing](#CommonErrorsSection_7)
 - [Programmer's Notepad add text anywhere when i compile](#CommonErrorsSection_8)
 - [Font system doesn't work with some background mode](#CommonErrorsSection_9)
+- [How to build tcc 816 provided with PVSneslib sources ?](#CommonErrorsSection_10)
 
 **[Maps](#MapsSection)**
 
@@ -279,6 +280,13 @@ You will note it when your project will give strange error during compilation. T
 ### <a name="CommonErrorsSection_9"/>Font system doesn't work with some background mode
 
 The output system is only available for **BG_MODE1**. If you need it in other mode, you need to develop it.
+
+
+### <a name="CommonErrorsSection_10"/>How to build tcc 816 provided with PVSneslib sources ?
+
+Go to tcc-65816 directory, then execute **./configure** command to create the config.mak file.
+If you are on windows and get an error like "'.' is not recognized as an internal or external command", you probably need to execute the **sh** command before.
+After this command, you can build tcc by doing : **make 816-tcc.exe**
 
 
 ## <a name="MapsSection"/>Maps
