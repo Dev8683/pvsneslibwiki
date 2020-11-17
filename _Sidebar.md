@@ -10,6 +10,7 @@
   1. **[Sprites](https://github.com/alekmaul/pvsneslib/wiki/Sprites)**
   1. **[Backgrounds](https://github.com/alekmaul/pvsneslib/wiki/Backgrounds)**
 
-# Tips #
+# Misc #
+  1. **[Roadmap](https://github.com/alekmaul/pvsneslib/wiki/Roadmap)**
   1. **[Tips and Bugs](https://github.com/alekmaul/pvsneslib/wiki/Tips-and-Bugs)**
   1. **[Community FAQ](https://github.com/alekmaul/pvsneslib/wiki/Community-FAQ)**
