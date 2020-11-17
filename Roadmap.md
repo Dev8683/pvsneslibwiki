@@ -22,4 +22,4 @@ Feel free to help us by implementing any of this functionalities !
 - Improve mode 7 functionalities and include the sample provided by [mills32](https://github.com/alekmaul/pvsneslib/issues/24)
 - Add capabilities to create HIrom games
 - Manage hblank
-- develop new driver to get more files format with sonor engine
+- develop new driver to get more files format with sound engine
