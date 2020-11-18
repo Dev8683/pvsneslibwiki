@@ -2,7 +2,7 @@ Feel free to help us by implementing any of this functionalities !
 
 # High priority:
 
-- TCC: integrate the last modifications did my mic_ **(INPROGRESS : ALEKMAUL)**
+- TCC: integrate the last modifications did my mic_ **(Inprogress : Alekmaul)**
 - WLA DX upgrade: solve the warning which appear on consoles.asm and sprites.asm about the slot number
 - Review of the header file to include last modifications of wla
 - Remove DEVKITSNES and DEVKIT65XX to add them as environment variables (like JAVAHOME for example) 
