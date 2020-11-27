@@ -1,9 +1,9 @@
-Here, You will find  detailed instruction for installing libSnes on a Windows environment.  
-To use PVSnesLib, you will need:  
+Here, you will find  detailed instruction for installing PVSnesLib on a Windows environment.  
+To use it, you will need:  
   * msys  
   * Last version of DevKitSnes 
   * Last version of PVSnesLib binaries  
-  * An editor like Programmer's Notepad or Eclipse (if your PC is strong enough ;-))  
+  * An editor like Programmer's Notepad, Sublime text or Eclipse (if your PC is strong enough ;-))  
 
 Additional sections below will cover others OS installation like Linux and Mac OS X.  
 
@@ -19,7 +19,15 @@ The first thing you need to do to get you started is downloading the latest vers
 
 You can find the latest release here: [devkitsnes' latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-Put it wherever you like – it doesn’t affect the compilation (you will only need to define it in your PATH), as long as you don’t extract it in a directory that contains spaces (eg, ‘**C:/snesdev/devkitSnes**’ would be fine).  
+Put it wherever you like but keep a path without any spaces – it does not affect the compilation.
+We recommend you to create the directory **C:/snesdev**.
+
+Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
+It you follow the hereabove advise, you should set PVSNESLIB_HOME to **/c/snesdev** by using this command line :
+`setx PVSNESLIB_HOME "/c/snesdev"`
+
+Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you will get buid issue like "echo: command not found".
+
 
 #### Python
 
