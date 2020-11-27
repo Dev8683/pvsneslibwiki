@@ -9,6 +9,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [I found a bug. What can i do ?](#MiscSection_3)
 - [Can we create Hirom games with the lib ?](#MiscSection_4)
 - [Where comes from PVSnesLib name ?](#MiscSection_5)
+- [I would like to share my project with PVSneslib community](#MiscSection_6)
 
 **[About the lib](#AboutPVsneslib)**
 
@@ -62,6 +63,12 @@ No, PVSneslib currenty manage Lorom games only but maybe it will implemented in 
 
 The library could not be named LibSnes because an other project with same name was already existing. 
 The "PV" letters is a tribute to PocketViewer, the famous Casio diary on which Alekmaul has developped there are a long time !
+
+### <a name="MiscSection_6"/>I would like to share my project with PVSneslib community
+
+It is a very good idea and the community will be probably happy to study it. But we cannot add your code with others examples in PVsneslib because we need to keep it up to date for each improvement of PVSneslib.
+
+In this case, we recommend you to upload it on your github page and create a wiki page here to present it.
 
 ---
 
