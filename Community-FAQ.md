@@ -31,6 +31,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [Programmer's Notepad add text anywhere when i compile](#CommonErrorsSection_8)
 - [Font system doesn't work with some background mode](#CommonErrorsSection_9)
 - [How to build tcc 816 provided with PVSneslib sources ?](#CommonErrorsSection_10)
+- [I get the error "echo: command not found"](#CommonErrorsSection_11)
 
 **[Maps](#MapsSection)**
 
@@ -287,6 +288,12 @@ The output system is only available for **BG_MODE1**. If you need it in other mo
 Go to tcc-65816 directory, then execute **./configure** command to create the config.mak file.
 If you are on windows and get an error like "'.' is not recognized as an internal or external command", you probably need to execute the **sh** command before.
 After this command, you can build tcc by doing : **make 816-tcc.exe**
+
+
+### <a name="CommonErrorsSection_11"/>I get the error "echo: command not found"
+
+You probably have an issue with the format of your PVSNESLIB_HOME environment variable.
+The value must be in unix style (**/c/snesdev** instead of **c:\\snesdev**) to avoid this issue. The variable can be created with this command line : `setx PVSNESLIB_HOME "/c/snesdev"`
 
 
 ## <a name="MapsSection"/>Maps
