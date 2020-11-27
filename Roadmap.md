@@ -16,6 +16,7 @@ Feel free to help us by implementing any of this functionalities !
 - replace tasm.exe part (spc700) by the wla dx version to provide a unix alternative
 - integrate docker image
 - add a vscode template
+- add some chipset support (sa1, dsp, superfx, ...)
 
 # Low priority:
 
