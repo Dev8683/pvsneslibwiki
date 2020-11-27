@@ -15,6 +15,7 @@ Feel free to help us by implementing any of this functionalities !
 - Finish to implement mode 5, 6 by adapting gfx2snes to have compatible pictures (see [here](https://github.com/alekmaul/pvsneslib/issues/14))
 - replace tasm.exe part (spc700) by the wla dx version to provide a unix alternative
 - integrate docker image
+- add a vscode template
 
 # Low priority:
 
