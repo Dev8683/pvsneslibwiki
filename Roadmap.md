@@ -5,13 +5,14 @@ Feel free to help us by implementing any of this functionalities !
 - TCC: integrate the last modifications done by mic_ **(Done: Alekmaul)**
 - WLA DX upgrade: solve the warning which appear on consoles.asm and sprites.asm about the slot number **(Done: Alekmaul)**
 - Review of the header file to include last modifications of wla **(Done: Alekmaul)**
-- Remove DEVKITSNES and DEVKIT65XX to add them as environment variables (like JAVAHOME for example) **(InProgress: RetroAntho)**
-- replace .obj files by .lib with wla dx
+- Remove DEVKITSNES and DEVKIT65XX to add them as environment variables (like JAVAHOME for example) **(Done: RetroAntho)**
 - Include the python script directly in tcc tool
 - upgrade to the latest version of tcc
 
 # Medium priority:
 
+- recursively scan for source code in Makefile **(InProgress: RetroAntho)**
+- replace .obj files by .lib with wla dx
 - Finish to implement mode 5, 6 by adapting gfx2snes to have compatible pictures (see [here](https://github.com/alekmaul/pvsneslib/issues/14))
 - replace tasm.exe part (spc700) by the wla dx version to provide a unix alternative
 - integrate docker image
