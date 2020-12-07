@@ -8,6 +8,12 @@ Feel free to help us by implementing any of this functionalities !
 - Remove DEVKITSNES and DEVKIT65XX to add them as environment variables (like JAVAHOME for example) **(Done: RetroAntho)**
 - Include the python script directly in tcc tool
 - upgrade to the latest version of tcc
+- Review of constify tools :
+	- __tcc_ should become tcc_
+	- add a function to remove comments in C source file (// ou /* */)
+	- add a function to detect include in C files then parse them
+	- solve the issue from big size array : https://github.com/alekmaul/pvsneslib/issues/18 (sample available in attachment)
+	- manage implicit declaration of const array (const char a[] = {3,3}) on one or multiple lines
 
 # Medium priority:
 
@@ -18,6 +24,7 @@ Feel free to help us by implementing any of this functionalities !
 - integrate docker image
 - add a vscode template
 - add some chipsets support (sa1, dsp, superfx, ...)
+- tcc : review the part which create unique file name which add a slah on unix system
 
 # Low priority:
 
@@ -27,3 +34,4 @@ Feel free to help us by implementing any of this functionalities !
 - Add capabilities to create HIrom games
 - Manage hblank
 - develop new driver to get more files format with sound engine
+- add new function getPaletteColor which will return the value from VRAM for the given color ID
