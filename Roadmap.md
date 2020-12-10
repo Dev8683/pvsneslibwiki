@@ -10,6 +10,7 @@ Feel free to help us by implementing any of this functionalities !
 - upgrade to the latest version of tcc
 - Review of constify tools :
 	- __tcc_ should become tcc_
+	- manage const declared like : const myArray[5*6] = ...;
 	- add a function to remove comments in C source file (// ou /* */)
 	- add a function to detect include in C files then parse them
 	- solve the issue from big size array : https://github.com/alekmaul/pvsneslib/issues/18 (sample available in attachment)
