@@ -9,7 +9,7 @@ Feel free to help us by implementing any of this functionalities !
 - Include the python script directly in tcc tool
 - upgrade to the latest version of tcc
 - Review of constify tools :
-	- '__tcc_' should become 'tcc_'
+	- '\_\_tcc_' should become 'tcc_'
 	- manage const declared like : const myArray[5*6] = ...;
 	- add a function to remove comments in C source file (// ou /* */)
 	- add a function to detect include in C files then parse them
