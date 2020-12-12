@@ -105,23 +105,19 @@ To limit numbers between values like 0 and 50, you have to do `(rand() % 50)`. B
 - gfx2snes : transform all kinds of graphics to resources in Super Nintendo format. This is a central tool used by PVSneslib to load sprites, maps or palettes.
 Remember you that we have a lot of constraints on SNES and each parameter of the tool is important ! Parameters are divided in 3 groups : **g** for Graphics, **m** for Map, **p** for Palette.
 
-- smconv : to covert musics or sounds to bank of sounds readable on Super Nintendo and its sound processor SPC700
+- smconv : to convert musics or sounds to bank of sounds readable on Super Nintendo and its sound processor SPC700
 
 - snesbrr : to convert .wav files to .brr. If you want more informations on this format, you can read [this page](https://wiki.superfamicom.org/bit-rate-reduction-(brr))
 
-- snestools : this tool give us capabilities to patch the rom after its build. Currently, you can change country (so PAL/NTSC), title of your game and usage or not of ram. You will see it in all Makefiles of projects.
+- snestools : this tool is not used anymore by PVSneslib (it was used to patch the rom after its build) but it still provided with it if you want to see the header of your rom.
 
-- 816-tcc and 816-opt.py : this is the tiny C compiler for 8/16 bits architecture. Due to some limitations and performances issues, a python script is used after to optimized produced code.
-
-- bass : ...to complete...
+- 816-tcc and 816-opt.py : this is the tiny C compiler for 8/16 bits architecture, it translate your C code to ASM for 65c816. Due to some limitations and performances issues, a python script is used after to optimized produced code.
 
 - bin2h : to convert binary file. Maybe is it double with bin2txt ?
 
-- constify : ...to complete...
+- constify : by using your .c source files to detect const variables, it moves variables from RAM to ROM in .asm files to improve performances.
 
-- stripcom : ...to complete...
-
-- tasm : ...to complete...
+- tasm : it is the assembler tool for SPC700 (the processor used to manage the sounds and musics on SNES)
 
 - wla-65816 and wlalink : these tools are assembler to convert your .asm files to .obj files (code readable by 65c816). Wlalink is the linker that "merge" all files.
 
