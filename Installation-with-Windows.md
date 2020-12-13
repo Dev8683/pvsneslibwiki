@@ -34,7 +34,7 @@ Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you 
 
 To use c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **c:\python27**.
 
-<a id="python27" href="https://www.portabledev.com/download/12/">Python 2.7</a>
+<a id="python27" href="https://www.portabledev.com/download/12/" target="_blank">Python 2.7</a>
 
 If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change first line to use the correct directory.  
 ```
