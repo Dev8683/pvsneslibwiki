@@ -28,12 +28,13 @@ It you follow the hereabove advise, you should set PVSNESLIB_HOME to **/c/snesde
 
 Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you will get buid issue like "echo: command not found".
 
+![PVHome](https://www.portabledev.com/wp-content/uploads/2020/12/home_var.png)
 
 #### Python
 
 To use c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **c:\python27**.
 
-[Python 2.7](http://www.portabledev.com/download/12/)
+[Python 2.7](https://www.portabledev.com/download/12/)
 
 If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change first line to use the correct directory.  
 ```
@@ -47,7 +48,7 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
 
 Download **msys** to use Unix like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
-[msys 1.0.17](http://www.portabledev.com/download/11/)
+[msys 1.0.17](https://www.portabledev.com/download/11/)
 
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
