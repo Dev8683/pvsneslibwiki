@@ -34,7 +34,7 @@ Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you 
 
 To use c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **c:\python27**.
 
-<a id="python27" href="https://www.portabledev.com/download/12/" target="_blank">Python 2.7</a>
+<a id="python27" href="https://www.portabledev.com/wp-content/files/python-2.7.9.msi">Python 2.7</a>
 
 If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change first line to use the correct directory.  
 ```
@@ -48,7 +48,7 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
 
 Download **msys** to use Unix like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
-[msys 1.0.17](https://www.portabledev.com/download/11/)
+<a id="msys1017" href="https://www.portabledev.com/wp-content/files/msys-1.0.17.exe">msys 1.0.17</a>
 
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
