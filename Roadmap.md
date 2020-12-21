@@ -28,6 +28,7 @@ Feel free to help us by implementing any of this functionalities !
 - tcc : review the part which create unique file name which add a slash on unix system **(Done: AlekMaul)**
 - harmonize tools bin2h.exe (devkitsnes) & bin2txt.exe (tools) to have the same name
 - review samples with sound to move some parts of code in snes rules then add a ‘res’ folder for resources like we did it with ‘src’
+- clean some issues opened for a long time on github
 
 # Low priority:
 
