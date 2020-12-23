@@ -2,6 +2,7 @@ Feel free to help us by implementing any of this functionalities !
 
 # High priority:
 
+- AnimatedSprite : the sprite disappears when you move it (left, right, up or bottom). Issue mentioned on discord
 - TCC: integrate the last modifications done by mic_ **(Done: Alekmaul)**
 - WLA DX upgrade: solve the warning which appear on consoles.asm and sprites.asm about the slot number **(Done: Alekmaul)**
 - Review of the header file to include last modifications of wla **(Done: Alekmaul)**
