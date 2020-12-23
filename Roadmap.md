@@ -2,7 +2,6 @@ Feel free to help us by implementing any of this functionalities !
 
 # High priority:
 
-- AnimatedSprite : the sprite disappears when you move it (left, right, up or bottom). Issue mentioned on discord
 - TCC: integrate the last modifications done by mic_ **(Done: Alekmaul)**
 - WLA DX upgrade: solve the warning which appear on consoles.asm and sprites.asm about the slot number **(Done: Alekmaul)**
 - Review of the header file to include last modifications of wla **(Done: Alekmaul)**
@@ -40,3 +39,4 @@ Feel free to help us by implementing any of this functionalities !
 - Manage hblank
 - develop new driver to get more files format with sound engine
 - add new function getPaletteColor which will return the value from VRAM for the given color ID
+- add in snes rules the check on PVSNESLIB_DEBUG variable. If it exists, it will create automatically the temporary tree to store all steps executed during the build (.ps file, .asp, .asm...). It will be easier and quick to see the content of each files to debug it.
