@@ -10,6 +10,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [Can we create Hirom games with the lib ?](#MiscSection_4)
 - [Where comes from PVSnesLib name ?](#MiscSection_5)
 - [I would like to share my project with PVSneslib community](#MiscSection_6)
+- [Is it possible to use Docker ?](#MiscSection_7)
 
 **[About the lib](#AboutPVsneslib)**
 
@@ -69,6 +70,10 @@ The "PV" letters is a tribute to PocketViewer, the famous Casio diary on which A
 It is a very good idea and the community will be probably happy to study it. But we cannot add your code with others examples in PVsneslib because we need to keep it up to date for each improvement of PVSneslib.
 
 In this case, we recommend you to upload it on your github page and create a wiki page here to present it.
+
+### <a name="MiscSection_7"/>Is it possible to use Docker ?
+
+Yes, some people worked on it and created a docker image that you can find [here](https://github.com/Crazy-Piri/pvsneslib-docker)
 
 ---
 
