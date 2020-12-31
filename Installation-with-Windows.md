@@ -26,7 +26,7 @@ Then, you need to create a new environment variable PVSNESLIB_HOME to provide th
 It you follow the hereabove advise, you should set PVSNESLIB_HOME to **/c/snesdev** by using this command line :
 `setx PVSNESLIB_HOME "/c/snesdev"`
 
-Please remember that you have to use the "windows compatible" path so **/<drive>/<folder of PVSneslib>**
+Please remember that you have to use the "windows compatible" path so **/driveLetter/PVSneslibFolder**.
 You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.obj".` if you use the path like **/usr/local** because WLA does not support it.
 
 Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you will get buid issue like "echo: command not found".
