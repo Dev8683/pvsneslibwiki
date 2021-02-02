@@ -23,11 +23,11 @@ Feel free to help us by implementing any of this functionalities !
 - Finish to implement mode 5, 6 by adapting gfx2snes to have compatible pictures (see [here](https://github.com/alekmaul/pvsneslib/issues/14))
 - replace tasm.exe part (spc700) by the wla dx version to provide a unix alternative
 - integrate docker image
-- add a vscode template
+- add a vscode template **(Done: Alekmaul)**
 - add some chipsets support (sa1, dsp, superfx, ...)
 - tcc : review the part which create unique file name which add a slash on unix system **(Done: AlekMaul)**
 - harmonize tools bin2h.exe (devkitsnes) & bin2txt.exe (tools) to have the same name
-- review samples with sound to move some parts of code in snes rules then add a ‘res’ folder for resources like we did it with ‘src’
+- review samples with sound to move some parts of code in snes rules **(Done: RetroAntho)**
 - clean some issues opened for a long time on github
 - create new sample to show how to load sounds and musics at the same time (we need to respect specific order: sound at first, then music...)
 - replace pixel.c file by asm version to improve performances and provide function to draw pixels
