@@ -15,6 +15,7 @@ Feel free to help us by implementing any of this functionalities !
 	- add a function to detect include in C files then parse them
 	- solve the issue from big size array : https://github.com/alekmaul/pvsneslib/issues/18 (sample available in attachment) **(Done: AlekMaul)**
 	- manage implicit declaration of const array (const char a[] = {3,3}) on one or multiple lines
+- Add an example of how to update VRAM with a buffer (with, for example, two different screens)
 
 # Medium priority:
 
