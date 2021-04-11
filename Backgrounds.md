@@ -22,6 +22,7 @@ Set background tileset
 Background modes
 The SNES has 7 background modes.
 
+```
 Mode    # Colors for BG
          1   2   3   4
 ======---=---=---=---=
@@ -34,6 +35,7 @@ Mode    # Colors for BG
 6       16   -   -   -
 7      256   -   -   -
 7EXTBG 256 128   -   -
+```
 In all modes and for all BGs, color 0 in any palette is considered transparent.
 
 ## Background sizes
