@@ -20,6 +20,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [How to create random number ?](#AboutPVsneslib_4)
 - [What is the goal of each tool ?](#AboutPVsneslib_5)
 - [What are .it files ?](#AboutPVsneslib_6)
+- [How to convert .mid to .it ?](#AboutPVsneslib_7)
 
 **[Common errors](#CommonErrorsSection)**
 
@@ -130,6 +131,10 @@ Remember you that we have a lot of constraints on SNES and each parameter of the
 
 .it files are impulse tracker files, a music format near of SNES one (.spc files). It is used because it managed many channels like the SNES and a tool is provided with PVSnesLib (smconv) to convert it to soundbanks.
 [Schism Tracker](http://schismtracker.org/) can be used to open this files, it is a reimplementation of Impulse Tracker
+
+### <a name="AboutPVsneslib_7"/>How to convert .mid to .it ?
+
+[OpenMPT (Open ModPlug Tracker)](https://openmpt.org/features) is able to do it !
 
 ---
 
