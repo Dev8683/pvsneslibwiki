@@ -43,3 +43,4 @@ Feel free to help us by implementing any of this functionalities !
 - develop new driver to get more files format with sound engine
 - add new function getPaletteColor which will return the value from VRAM for the given color ID
 - add in snes rules the check on PVSNESLIB_DEBUG variable. If it exists, it will create automatically the temporary tree to store all steps executed during the build (.ps file, .asp, .asm...). It will be easier and quick to see the content of each files to debug it.
+- update in pvsneslib sources, samples code and tools which use extern variables the data type (probably char) by the real type (u16 for map/sprites...). It will avoid some cast in the code will be more clear
