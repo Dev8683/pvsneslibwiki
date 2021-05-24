@@ -161,7 +161,7 @@ The only thing that you need to do is to init graphics, palette and sprite size.
     consoleInit();
 	
     // Init Sprites gfx and palette with default size of 16x16
-    oamInitGfxSet(&gfxpsrite, (&gfxpsrite_end-&gfxpsrite), &palsprite, 0, 0x4000, OBJ_SIZE16);
+    oamInitGfxSet(&gfxpsrite, (&gfxpsrite_end-&gfxpsrite), &palsprite, 0, 0x4000, OBJ_SIZE16_L32);
 ```
 
 The parameters are :  
@@ -176,7 +176,7 @@ The parameters are :
 
 **0x4000** address in SNES VRAM where we are going to put the graphics (it's a 8K word step, be careful !).  
 
-**OBJ_SIZE16** size of sprite, you can use **OBJ_SIZE8**, **OBJ_SIZE16** and **OBJ_SIZE32**. Remember that this parameter is the **Small** size attribute (see above the table about Sprite size).  
+**OBJ_SIZE16_L32** size of sprite, you can use **OBJ_SIZE8_L16**, **OBJ_SIZE8_L32**, **OBJ_SIZE8_L64**, **OBJ_SIZE16_L32**, **OBJ_SIZE16_L64** and **OBJ_SIZE32_L64**. It represent the size when using **small** or **large** attribute with **oamSetEx** function, so OBJ_SIZE16_L32 mean the size is 16 pixel for small size (OBJ_SMALL) and 32 for large size (OBJ_LARGE).
 
 
 Also, if you put all graphics in VRAM during one process (with a DMA copy for example) and want to change only the size and address of sprites, you can use the function **oamInitGfxAttr()** with two paremeters : the address and the size.  
