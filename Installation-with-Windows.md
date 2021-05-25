@@ -47,6 +47,10 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
   import os
 ```
 
+**WARNING!** _This point need to be tested and confirmed. Please keep us informed by discord if you tested it!_
+
+Some people from community get issues with python part during the build process because they installed python only for the current user. It create variables and profiles that PVSneslib does not recognize. Please choose the option "install for everyone on this system" to avoid issues.
+
 #### Msys
 
 Download **msys** to use Unix like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
@@ -56,13 +60,17 @@ Download **msys** to use Unix like environment and extract it in your SNES direc
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I'm French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
+I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
 Choose the Path entry to add **c:\snesdev\msys\bin** at the end of the line.  
 
 ![Path2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_05.jpg)
+
+**WARNING!** _This point need to be tested and confirmed. Please keep us informed by discord if you tested it!_
+
+Some people have issues while they build samples from repository because of they installer 64b version of MinGW. To avoid these kind of errors, please use 32b version of the tools even if you are on 64 bits operating system.
 
 
 #### Emulators  
