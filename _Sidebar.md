@@ -13,4 +13,5 @@
 # Misc #
   1. **[Roadmap](https://github.com/alekmaul/pvsneslib/wiki/Roadmap)**
   1. **[Tips and Bugs](https://github.com/alekmaul/pvsneslib/wiki/Tips-and-Bugs)**
+  1. **[Community code](https://github.com/alekmaul/pvsneslib/wiki/Community-code)**
   1. **[Community FAQ](https://github.com/alekmaul/pvsneslib/wiki/Community-FAQ)**
