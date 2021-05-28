@@ -72,6 +72,15 @@ Choose the Path entry to add **c:\snesdev\msys\bin** at the end of the line.
 
 Some people have issues while they build samples from repository because of they installer 64b version of MinGW. To avoid these kind of errors, please use 32b version of the tools even if you are on 64 bits operating system.
 
+#### GCC 
+
+Depending on the tools already installed on your computer, you may need to install GCC too.
+For example, you will have to install it if you encounter this error building projects which use smconv tool (like the mario-like sample) :
+
+It is also necessary if you want to build yourself some tools in devkitsnes (like smconv !).
+
+You can download the latest version of the tool [here](https://sourceforge.net/projects/tdm-gcc/) but we recommend you to get the 32 bit one, like we advised you for other tools !
+
 
 #### Emulators  
 
