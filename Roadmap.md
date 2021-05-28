@@ -30,9 +30,9 @@ Feel free to help us by implementing any of this functionalities !
 - Develop a more flexible asm map engine
 - Improve mode 7 camera rotation
 - Add capabilities to create HIrom games
+- Add a check (in tcc or in other tool?) to compare the signature of functions between .c and .h file and trigger an error if they are different (it can save a lot of time to developers because this difference is hard to see and produce strange result)
 - Manage hblank
 - develop new driver to get more files format with sound engine
-- add new function getPaletteColor which will return the value from VRAM for the given color ID
 - add in snes rules the check on PVSNESLIB_DEBUG variable. If it exists, it will create automatically the temporary tree to store all steps executed during the build (.ps file, .asp, .asm...). It will be easier and quick to see the content of each files to debug it.
 - update in pvsneslib sources, samples code and tools which use extern variables the data type (probably char) by the real type (u16 for map/sprites...). It will avoid some cast in the code will be more clear
 - add a new variable PVSNESLIB_DEBUG to provide detailed informations during the build process to assist users when they begin to use the library. For example: if you use setmode with mode7, display an error saying to use setmode7 function instead. It is a kind of assert wich could be managed in asm with .FAIL directive. By default, the library could be built without this variable and it will not decrease performances
