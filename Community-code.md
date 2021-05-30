@@ -6,7 +6,7 @@ Feel free to contribute and add a link to your project !
 
 ### Sound test project :
 
-[This code](https://github.com/alekmaul/pvsneslib/files/5396843/SoundTest_ByDiegoLeao.zip) made by diegoleao with PVSneslib v2 will explain you how to manage audio part with the library.
+[This code](https://github.com/alekmaul/pvsneslib/files/6565523/SoundTest_ByDiegoLeao_PvsneslibV3.zip) made by diegoleao with PVSneslib v3 will explain you how to manage audio part with the library. The code for PVSneslib v2 is here: https://github.com/alekmaul/pvsneslib/files/5396843/SoundTest_ByDiegoLeao.zip
 
 
 ### Street of rage demo port
