@@ -6,7 +6,7 @@ Feel free to contribute and add a link to your project !
 
 ### Sound test project :
 
-[This code](https://github.com/alekmaul/pvsneslib/files/6565523/SoundTest_ByDiegoLeao_PvsneslibV3.zip) made by diegoleao with PVSneslib v3 will explain you how to manage the audio part with the library. 
+[This code](https://github.com/alekmaul/pvsneslib/files/6565523/SoundTest_ByDiegoLeao_PvsneslibV3.zip) made by diegoleao with PVSneslib v3 will explain you how to manage the audio part with the library (don't forget to read the "Readme" file for essential information that is not present in the code itself). 
 If you need the previous version of SoundTest (for PVSneslib v2) you can find it [here](https://github.com/alekmaul/pvsneslib/files/5396843/SoundTest_ByDiegoLeao.zip).
 
 
