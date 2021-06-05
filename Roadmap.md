@@ -19,7 +19,6 @@ Feel free to help us by implementing any of this functionalities !
 - replace tasm.exe part (spc700) by the wla dx version to provide a unix alternative
 - integrate docker image
 - add some chipsets support (sa1, dsp, superfx, ...)
-- harmonize tools bin2h.exe (devkitsnes) & bin2txt.exe (tools) to have the same name
 - clean some issues opened for a long time on github
 - create new sample to show how to load sounds and musics at the same time (we need to respect specific order: sound at first, then music...)
 - replace pixel.c file by asm version to improve performances and provide function to draw pixels
