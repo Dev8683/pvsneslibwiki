@@ -106,7 +106,7 @@ To limit numbers between values like 0 and 50, you have to do `(rand() % 50)`. B
 
 ### <a name="AboutPVsneslib_5"/>What is the goal of each tool ?
 
-- bin2txt : convert binary file (like an image) to text file to include it directly in your project
+- bin2txt : convert binary file to text file to include it directly in your project. It is used to include the file generated (with TASM tool) for spc700 CPU (audio) directly in PVSneslib source code.
 
 - gfx2snes : transform all kinds of graphics to resources in Super Nintendo format. This is a central tool used by PVSneslib to load sprites, maps or palettes.
 Remember you that we have a lot of constraints on SNES and each parameter of the tool is important ! Parameters are divided in 3 groups : **g** for Graphics, **m** for Map, **p** for Palette.
@@ -118,8 +118,6 @@ Remember you that we have a lot of constraints on SNES and each parameter of the
 - snestools : this tool is not used anymore by PVSneslib (it was used to patch the rom after its build) but it still provided with it if you want to see the header of your rom.
 
 - 816-tcc and 816-opt.py : this is the tiny C compiler for 8/16 bits architecture, it translate your C code to ASM for 65c816. Due to some limitations and performances issues, a python script is used after to optimized produced code.
-
-- bin2h : to convert binary file. Maybe is it double with bin2txt ?
 
 - constify : by using your .c source files to detect const variables, it moves variables from RAM to ROM in .asm files to improve performances.
 
