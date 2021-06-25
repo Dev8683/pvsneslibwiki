@@ -10,6 +10,9 @@ Feel free to help us by implementing any of this functionalities !
 	- add a function to remove comments in C source file (// ou /* */)
 	- add a function to detect include in C files then parse them
 	- manage implicit declaration of const array (const char a[] = {3,3}) on one or multiple lines
+- solve the issue in snes rules when using 64b version of make and update the doc
+- solve the segmentation fault wich appears in tcc when using it in linux OS
+- improve the release management by merging examples/lib and devkitsnes folders to have the final tree when extracting data (and remove all binaries from sources version?)
 
 # Medium priority:
 
