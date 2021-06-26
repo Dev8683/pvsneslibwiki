@@ -66,11 +66,11 @@ I am French with a Windows 7 computer, so the name will not reflect your exact c
 
 Choose the Path entry to add **c:\snesdev\msys\bin** at the end of the line.  
 
-![Path2](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_05.jpg)
+![Path2](https://www.portabledev.com/wp-content/uploads/2021/06/msyspath.png)
 
-**WARNING!** _This point need to be tested and confirmed. Please keep us informed by discord if you tested it!_
+**WARNING!** _msys bin path MUST be the 1st entry of your path to avoid using make from another location_
 
-Some people have issues while they build samples from repository because of they installer 64b version of MinGW. To avoid these kind of errors, please use 32b version of the tools even if you are on 64 bits operating system.
+Some people have issues while they build samples from repository because of they installed 64b version of MinGW. To avoid these kind of errors, please put msys bin path as first entry of your path.
 
 #### GCC 
 
