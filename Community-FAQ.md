@@ -35,6 +35,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [Font system doesn't work with some background mode](#CommonErrorsSection_9)
 - [How to build tcc 816 provided with PVSneslib sources ?](#CommonErrorsSection_10)
 - [I get the error "echo: command not found"](#CommonErrorsSection_11)
+- [On Linux i get : "fatal error: bits/libc-header-start.h"](#CommonErrorsSection_12)
 
 **[Maps](#MapsSection)**
 
@@ -305,6 +306,11 @@ After this command, you can build tcc by doing : **make 816-tcc.exe**
 
 You probably have an issue with the format of your PVSNESLIB_HOME environment variable.
 The value must be in unix style (**/c/snesdev** instead of **c:\\snesdev**) to avoid this issue. The variable can be created with this command line : `setx PVSNESLIB_HOME "/c/snesdev"`
+
+
+### <a name="CommonErrorsSection_12"/>On Linux i get : "fatal error: bits/libc-header-start.h"
+
+When building some tools on Linux like **snestools**, if you get the error _/usr/include/stdlib.h:25:10: fatal error: bits/libc-header-start.h: no such file or directory_, it is related to the -m32 CFLAG provided in the makefile, you probably forgot to install some libraries from gcc. For example on Ubuntu, you just have to install **gcc-multilib** by executing `sudo apt-get install gcc-multilib`
 
 
 ## <a name="MapsSection"/>Maps
