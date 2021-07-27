@@ -15,3 +15,4 @@
   1. **[Tips and Bugs](https://github.com/alekmaul/pvsneslib/wiki/Tips-and-Bugs)**
   1. **[Community code](https://github.com/alekmaul/pvsneslib/wiki/Community-code)**
   1. **[Community FAQ](https://github.com/alekmaul/pvsneslib/wiki/Community-FAQ)**
+  1. **[SNES ROM Header](https://github.com/alekmaul/pvsneslib/wiki/Community-FAQ)**
