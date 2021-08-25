@@ -1,4 +1,4 @@
-Here, you will find  detailed instruction for installing PVSnesLib on a Windows environment.  
+Here you will find  detailed instruction for installing PVSnesLib on a Windows environment.  
 To use it, you will need:  
   * msys  
   * Last version of DevKitSnes 
