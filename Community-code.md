@@ -25,3 +25,8 @@ It is very useful to see how you can organize your code!
 Dr. Ludos created it for a game jam then continued to improve it, the code is well commented. The original project is available on his website but it was build for PVSneslib v2: https://drludos.itch.io/the-last-super
 
 It has been ported on PVSneslib v3 and is available [here](https://github.com/alekmaul/pvsneslib/files/6556286/TheLastSuper_sourcecode.zip)
+
+### Scrolling map with collisions :
+
+This is the original "map scroll example" modified to add collision checking. Move Mario up, down, left, and right to check for tiles that contain collisions. The sprite will change when you touch any tile that has collision. OBS: Press and hold B to move 1 pixel at a time, for finer control.
+https://github.com/alekmaul/pvsneslib/files/7148973/mapscroll_example_with_collisions.zip
