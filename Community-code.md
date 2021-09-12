@@ -28,5 +28,4 @@ It has been ported on PVSneslib v3 and is available [here](https://github.com/al
 
 ### Scrolling map with collisions :
 
-This is the original "map scroll example" modified to add collision checking. Move Mario up, down, left, and right to check for tiles that contain collisions. The sprite will change when you touch any tile that has collision. OBS: Press and hold B to move 1 pixel at a time, for finer control.
-https://github.com/alekmaul/pvsneslib/files/7148973/mapscroll_example_with_collisions.zip
+[This code](https://github.com/alekmaul/pvsneslib/files/7148973/mapscroll_example_with_collisions.zip) made by diegoleao changes the original "map scroll example" to add collision checking. Move Mario up, down, left, and right to check for tiles that contain collisions. The sprite will change when you touch any tile that has collision. OBS: Press and hold B to move 1 pixel at a time, for finer control.
