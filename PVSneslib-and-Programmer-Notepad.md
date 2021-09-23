@@ -22,7 +22,7 @@ You will see 3 files on the Project Window.
 * Makefile is the file used to make the .sfc file.
 * template.c is the C source file.
 
-Now, just do a "make clean" command (with the shortcut you configured below, for example Alt+é for me).
+Now, just do a "make clean" command (with the shortcut you configured, for example Alt+é for me).
 You must see a new Output window with the result of your make clean command.
 
 ```
