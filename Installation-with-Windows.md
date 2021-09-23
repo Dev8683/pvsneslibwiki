@@ -60,8 +60,9 @@ We will need a Unix-like environment, so download **msys**  and extract it in yo
 
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
-To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Right click on the "Computer" icon, choose "Properties", and then "Advanced system settings". Click on the "Environment variables" button.  
+To add the **msys\bin** directory to your PATH environment variable (eg,  **c:\snesdev\msys\bin** in our example), right-click on the "Computer" icon, choose "Properties", and then "Advanced system settings". Click on the "Environment variables" button. 
+ 
+I am French with a Windows 7 computer, so the names below will not reflect your exact configuration.
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
@@ -71,7 +72,7 @@ Choose the Path entry to add **c:\snesdev\msys\bin**.
 
 ![Path2](https://www.portabledev.com/wp-content/uploads/2021/06/msyspath.png)
 
-Some people have issues while they build samples from repository because of they installed 64b version of MinGW. To avoid these kind of errors, please put msys bin path as first entry of your path.
+Some people have issues while they build samples from the repository because they installed 64b version of MinGW. To avoid these kinds of errors, please put msys bin path as the first entry of your path.
 
 #### GCC 
 
@@ -82,7 +83,7 @@ For example, you will have to install it if you encounter this error building pr
 
 It is also necessary if you want to build yourself some tools in devkitsnes (like smconv !).
 
-You can download the latest version of the tool [here](https://sourceforge.net/projects/tdm-gcc/) but we recommend you to get the 32 bit one, like we advised you for other tools !
+You can download the latest version of the tool [here](https://sourceforge.net/projects/tdm-gcc/) but we recommend you to get the 32 bit one, as we advised you for other tools!
 
 
 #### Emulators  
@@ -97,9 +98,9 @@ Download emulators to test your homebrews and put them in the emulators director
 
 ### Step 2: Installing the library PVSnesLib
 
-Now download PVSnesLib library and unzip it in the same directory than your devkitSnes (eg, **C:/snesdev/pvsneslib** would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
+Now download PVSnesLib library and unzip it in the same directory as your devkitSnes (eg, **C:/snesdev/pvsneslib** would be fine). You don't need to have PVSnesLib source code to use it, only obj files are needed.  
 
-You can find the lastest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+You can find the latest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
 It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE), though they don’t necessarily affect the functionality of PVSneslib.
 
