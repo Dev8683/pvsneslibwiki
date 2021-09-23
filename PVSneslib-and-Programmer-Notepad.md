@@ -16,23 +16,13 @@ That's all, now you have the _make_ and _make clean_ command defined.
 
 ## Editing Path and compiling
 
-With Programmer's Notepad menu **File/Open project(s)**, open the //template.pnproj// file that is in the psneslib **template** directory.  
+With Programmer's Notepad menu **File/Open project(s)**, open the "template.pnproj" file that is in the psneslib **template** directory.  
 You will see 3 files on the Project Window.  
 * hdr.asm is the file that defined the future SNES ROM definition.
 * Makefile is the file used to make the .sfc file.
 * template.c is the C source file.
 
-Open **Makefile** and change the path to use the correct directory for your snesdev installation. Example below show a **D:/devperso/snesdevkit** root entry for my snes developments, if you have **c:\snesdev**, you just have to change it to **/c/snesdev**. Same thing for your devkitsnes entry.  
-
-```
-  # path to snesdev root directory (for emulators, devkitsnes, libsnes)
-  export DEVKITSNES := /d/devperso/snesdevkit/
-  
-  # path to devkitsnes root directory for compiler
-  export DEVKIT65XX := /d/devperso/snesdevkit/devkitsnes
-```
-
-Now, just do a //make clean// command (with the shortcut you configured below, for example Alt+é for me).
+Now, just do a "make clean" command (with the shortcut you configured below, for example Alt+é for me).
 You must see a new Output window with the result of your make clean command.
 
 ```
@@ -45,7 +35,7 @@ You must see a new Output window with the result of your make clean command.
 
 If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our [Discord](https://discord.gg/VdG2rgwZ), here in [Issues Part](https://github.com/alekmaul/pvsneslib/issues), or [Portabledev Forum](http://www.portabledev.com/smf/index.php) (less active). We will help you as soon as possible.
 
-Ok, now your template directory is cleaned, you can run the //make// command (with shortcut, remember ).
+Ok, now your template directory is cleaned, you can run the "make" command (with the shortcut, remember).
 You will have the following things in your Programmer's Notepad output window.
 
 ```
