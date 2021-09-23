@@ -19,17 +19,17 @@ The first thing you need to do to get you started is downloading the latest vers
 
 You can find the latest release here: [devkitsnes' latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-Put it wherever you like but keep a path without any spaces – it does not affect the compilation.
-We recommend you to create the directory **C:/snesdev**.
+Put it wherever you like – it does not affect the compilation - but keep the path without any spaces.
+We recommend however that you create the directory in **C:/snesdev**.
 
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
-It you follow the hereabove advise, you should set PVSNESLIB_HOME to **/c/snesdev** by using this command line :
+You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
 `setx PVSNESLIB_HOME "/c/snesdev"`
 
-**WARNING!** Please remember that you have to use the "windows compatible" path so **/driveLetter/PVSneslibFolder**.
-You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.obj".` if you use the path like **/usr/local** because WLA does not support it.
+Be careful: the path must be in Unix style (/c/ instead of c:\\) otherwise you will get build issues like "echo: command not found".
 
-Be carefull: the path must be in unix style (/c/ instead of c:\\) otherwise you will get buid issue like "echo: command not found".
+**WARNING!** Please remember that even though your folder path needs to be in "unix style" you have to use your windows drive as your path start, for example: **/c/PVSneslibFolder**.
+You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.obj".` if you use the path like **/usr/local** because WLA does not support it.
 
 ![PVHome](https://www.portabledev.com/wp-content/uploads/2020/12/home_var.png)
 
