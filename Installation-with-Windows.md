@@ -24,14 +24,14 @@ We recommend however that you create the directory in **C:/snesdev**.
 
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
 You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
-`setx PVSNESLIB_HOME "/c/snesdev"`
+`setx PVSNESLIB_HOME "/c/snesdev"`, or you can set it manually like it is shown below:
+
+![PVHome](https://www.portabledev.com/wp-content/uploads/2020/12/home_var.png)
 
 Be careful: the path must be in Unix style (/c/ instead of c:\\) otherwise you will get build issues like "echo: command not found".
 
 **WARNING!** Please remember that even though your folder path needs to be in "unix style" you have to use your windows drive as your path start, for example: **/c/PVSneslibFolder**.
 You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.obj".` if you use the path like **/usr/local** because WLA does not support it.
-
-![PVHome](https://www.portabledev.com/wp-content/uploads/2020/12/home_var.png)
 
 #### Python
 
@@ -39,7 +39,7 @@ To use c source code optimizer, you also need to have **Python** on your PC. Jus
 
 <a id="python27" href="https://www.portabledev.com/wp-content/files/python-2.7.9.msi">Python 2.7</a>
 
-If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change first line to use the correct directory.  
+If you put Python in another directory, just edit **816-opt.py** in **devkitSnes/bin** directory and change the first line to use the correct directory.  
 ```
   #!/c/Python27/python <- change here
   import sys
@@ -49,18 +49,18 @@ If you put Python in another directory, just edit **816-opt.py** in **devkitSnes
 
 **WARNING!** _This point need to be tested and confirmed. Please keep us informed by discord if you tested it!_
 
-Some people from community get issues with python part during the build process because they installed python only for the current user. It create variables and profiles that PVSneslib does not recognize. Please choose the option "install for everyone on this system" to avoid issues.
+Some people from the community get issues with the python part during the build process because they installed python only for the current user. It create variables and profiles that PVSneslib does not recognize. Please choose the option "install for everyone on this system" to avoid issues.
 
 #### Msys
 
-Download **msys** to use Unix like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
+Download **msys** to use Unix-like environment and extract it in your SNES directory. (eg, **C:\snesdev\** would be fine). You will have a subdirectory name **msys** with all msys distribution in it.  
 
 <a id="msys1017" href="https://www.portabledev.com/wp-content/files/msys-1.0.17.exe">msys 1.0.17</a>
 
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Do a Right Click on "Ordinateur" icon, choose "Paramètres système avancés" and then, click on "Variables d'environnement" button.  
+I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Do a Right Click on "Computer" icon, choose "Advanced system settings" and then, click on "Environnement variables" button.  
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
