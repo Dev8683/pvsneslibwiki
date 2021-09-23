@@ -43,8 +43,7 @@ You must see a new Output window with the result of your make clean command.
   > Time Taken: 00:00
 ```
 
-If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our 
-[Portabledev Forum](http://www.portabledev.com/smf/index.php) or here in [Issues Part](https://github.com/alekmaul/pvsneslib/issues), we will help you as soon as possible.
+If an error occurs, that's because your installation is not good, sorry about that. You can post your problem in our [Discord](https://discord.gg/VdG2rgwZ), here in [Issues Part](https://github.com/alekmaul/pvsneslib/issues), or [Portabledev Forum](http://www.portabledev.com/smf/index.php) (less active). We will help you as soon as possible.
 
 Ok, now your template directory is cleaned, you can run the //make// command (with shortcut, remember ).
 You will have the following things in your Programmer's Notepad output window.
