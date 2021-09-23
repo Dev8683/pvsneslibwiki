@@ -61,7 +61,7 @@ We will need a Unix-like environment, so download **msys**  and extract it in yo
 Msys needs to be added to Windows Path because lots of msys binary files are needed when we are going to compile.  
 
 To add the **msys\bin** directory to your PATH environment variable (eg,  you will add  **c:\snesdev\msys\bin** in our example).  
-I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Right click on the "Computer" icon, choose "Properties", and then "Advanced system settings". Click on the "Environnement variables" button.  
+I am French with a Windows 7 computer, so the name will not reflect your exact configuration. The goal is to have the Windows Path text box to add the msys/bin directory. Right click on the "Computer" icon, choose "Properties", and then "Advanced system settings". Click on the "Environment variables" button.  
 
 ![Path](http://www.portabledev.com/wp-content/uploads/2018/02/pn_tools_04.jpg)
 
