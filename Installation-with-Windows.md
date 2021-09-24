@@ -115,9 +115,7 @@ Now unzip the PVSnesLib file in the same directory as your devkitSnes (eg, **C:/
 
 You can find the latest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
-It is also recommended that you install **‘snes examples’** (examples for PVSnesLib) and [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE), though they don’t necessarily affect the functionality of PVSneslib.
-
-You can find the latest release here: [SNES examples latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+It is also recommended that you unzip **‘[snes examples](https://github.com/alekmaul/pvsneslib/releases/latest)’** (examples for PVSnesLib) and install either [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE) or Visual Studio Code (we have a (.vscode template)[https://github.com/alekmaul/pvsneslib/tree/master/vscode-template] available), though they don’t necessarily affect the functionality of PVSneslib. 
 
 At the end, you must have something like that :  
 ```
