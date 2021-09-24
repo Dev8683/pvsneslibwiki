@@ -111,9 +111,9 @@ Download emulators to test your homebrews and put them in the emulators director
 
 ### Step 2: Installing the library PVSnesLib
 
-Now unzip the PVSnesLib file in the same directory as your devkitSnes (eg, **C:/snesdev/pvsneslib** would be fine). You don't need PVSnesLib source code (also optionally available on the release page) to use the library, only the obj files are needed.
+Now unzip the PVSnesLib file ([latest release here](https://github.com/alekmaul/pvsneslib/releases/latest)) in the same directory as your devkitSnes. **C:/snesdev/pvsneslib** for example would be fine. 
 
-You can find the latest release here: [pvsneslib latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
+You don't need PVSnesLib source code (also optionally available on the release page) to use the library, only the obj files of the release.
 
 It is also recommended that you unzip **‘[snes examples](https://github.com/alekmaul/pvsneslib/releases/latest)’** (examples for PVSnesLib) and install either [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE) or Visual Studio Code (we have a (.vscode template)[https://github.com/alekmaul/pvsneslib/tree/master/vscode-template] available), though they don’t necessarily affect the functionality of PVSneslib. 
 
