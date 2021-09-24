@@ -156,6 +156,11 @@ rm template.asm template.ps
 > Time Taken: 00:01
 ```
 
-That's all, you've compiled your first program that does nothing but it's a first step !.  
+That's all, you've compiled your first program that does nothing but it's a first step!.
+
+To learn more, do not miss the foldable "Pages" section on our Wiki sidebar.
+It contains valuable information and even community code.
+
+![](https://user-images.githubusercontent.com/1707641/134710771-a11c2554-d504-4f28-a588-f608e75e7f45.png)
 
 Welcome to PVSnesLib world and enjoy doing some homebrews for your SNES :-P !
