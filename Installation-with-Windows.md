@@ -115,7 +115,7 @@ Now unzip the PVSnesLib file ([latest release here](https://github.com/alekmaul/
 
 You don't need PVSnesLib source code (also optionally available on the release page) to use the library, only the obj files of the release.
 
-It is also recommended that you unzip **‘[snes examples](https://github.com/alekmaul/pvsneslib/releases/latest)’** (examples for PVSnesLib) and install either [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE) or Visual Studio Code ([.vscode template here](https://github.com/alekmaul/pvsneslib/tree/master/vscode-template)), though they don’t necessarily affect the functionality of PVSneslib. 
+It is also recommended that you unzip **‘[snes examples](https://github.com/alekmaul/pvsneslib/releases/latest)’** (examples for PVSnesLib) and install either [Programmer's Notepad](http://www.pnotepad.org/download/) (an IDE) or [VS Code](https://code.visualstudio.com) ([.vscode template here](https://github.com/alekmaul/pvsneslib/tree/master/vscode-template)), though they don’t necessarily affect the functionality of PVSneslib. 
 
 At the end, you must have something like that :  
 ```
