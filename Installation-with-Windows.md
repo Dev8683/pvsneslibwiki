@@ -23,6 +23,23 @@ You can find the latest release here: [devkitsnes' latest release](https://githu
 Put it wherever you like – it does not affect the compilation - but keep the path without any spaces.
 We recommend however that you create the directory in **C:/snesdev**.
 
+At this point, your folder must look like this:
+```
+  c:\snesdev
+  .........\devkitSnes
+  .................\bin
+  .................\include
+  .........\emulators
+  .........\pvsneslib
+  ..................\template
+  ..................\include
+  ..................\lib
+  ..................\docs
+  .........\snes-examples
+```
+
+WARNING: Check if your files after you unzip (to avoid simple mistakes like this "c:\snesdev\pvsneslib\pvsneslib").
+
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
 You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
 `setx PVSNESLIB_HOME "/c/snesdev"`, or you can set it manually like it is shown below:
