@@ -136,4 +136,8 @@ At the end, you must have something like that :
 
 ##### Let's start compiling with Programmer's Notepad
 
-We will use the template example to test how our PVSnesLib library is installed. The template directory is shipped with PVSnesLib.  
+In order to check if PVSnesLib is installed correctly, let's compile the "template example" project using Programmer's Notepad:
+
+[Programmer's Notepad Tutorial](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad).
+
+The template example is shipped with PVSnesLib.
