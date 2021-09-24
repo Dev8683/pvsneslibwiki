@@ -38,7 +38,7 @@ At this point, your folder must look like this:
   .........\snes-examples
 ```
 
-WARNING: Check if your files after you unzip (to avoid simple mistakes like this "c:\snesdev\pvsneslib\pvsneslib").
+WARNING: Double check your files after you unzip (to avoid simple mistakes like this "c:\snesdev\pvsneslib\pvsneslib").
 
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
 You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
