@@ -29,16 +29,9 @@ At this point, your folder must look like this:
   .........\devkitSnes
   .................\bin
   .................\include
-  .........\emulators
-  .........\pvsneslib
-  ..................\template
-  ..................\include
-  ..................\lib
-  ..................\docs
-  .........\snes-examples
 ```
 
-WARNING: Double check your files after you unzip (to avoid simple mistakes like this "c:\snesdev\pvsneslib\pvsneslib").
+WARNING: Double check your files after you unzip (to avoid simple mistakes like this "c:\snesdev\devkitSnes\devkitSnes").
 
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
 You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
