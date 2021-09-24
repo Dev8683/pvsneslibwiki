@@ -20,6 +20,9 @@ The first thing you need to do to get you started is downloading the latest vers
 
 You can find the latest release here: [devkitsnes' latest release](https://github.com/alekmaul/pvsneslib/releases/latest)  
 
+Download the 3 files shown in the image, but for now, we are only going to unzip "devkitSnes" (later in the tutorial we are going to talk about the "pvsneslib" and snesexamples"):
+![](https://user-images.githubusercontent.com/1707641/134707564-a113483e-4ffa-471f-9518-f8ea57c7f187.png)
+
 Put it wherever you like – it does not affect the compilation - but keep the path without any spaces.
 We recommend however that you create the directory in **C:/snesdev**.
 
