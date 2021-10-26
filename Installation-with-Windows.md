@@ -44,7 +44,7 @@ You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
 
 Be careful: the path must be in Unix style (/c/ instead of c:\\) otherwise you will get build issues like "echo: command not found".
 
-**WARNING!** Please remember that even though your folder path needs to be in "Unix style" you have to use your windows drive as your path start, for example, **/c/PVSneslibFolder**.
+**WARNING!** Please remember that even though your folder path needs to be in "Unix style" you have to use your windows drive as your path start, for example, **/c/snesdev**.
 You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.obj".` if you use the path like **/usr/local** because WLA does not support it.
 
 #### Python
