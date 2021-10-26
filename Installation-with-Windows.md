@@ -34,7 +34,7 @@ At this point, your folder must look like this:
   .................\include
 ```
 
-**WARNING:** Double check your files after you unzip, only the contents of "devkitsnes-x.x.x" should be put into "devkitsnes" folder. For example, this is **incorrect**: "c:\snesdev\devkitsnes-x.x.x\devkitSnes".
+**WARNING:** Double-check your files after you unzip, only the contents of "devkitsnes-x.x.x" should be put into the snesdev folder (resulting in c:\snesdev\devkitsnes). For example, this is **wrong**: "c:\snesdev\devkitsnes-x.x.x\devkitSnes".
 
 Then, you need to create a new environment variable PVSNESLIB_HOME to provide the path to this directory.
 You can set PVSNESLIB_HOME to **/c/snesdev** by using this command line:
