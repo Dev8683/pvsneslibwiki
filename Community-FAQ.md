@@ -65,7 +65,7 @@ No, PVSneslib currenty manage Lorom games only but maybe it will implemented in 
 ### <a name="MiscSection_5"/>Where comes from PVSnesLib name ?
 
 The library could not be named LibSnes because an other project with same name was already existing. 
-The "PV" letters is a tribute to PocketViewer, the famous Casio diary on which Alekmaul has developped there are a long time !
+The "PV" letters comes from **P**ortablde**V**, the name of Alekmaul's [website](https://www.portabledev.com).
 
 ### <a name="MiscSection_6"/>I would like to share my project with PVSneslib community
 
