@@ -24,6 +24,7 @@ Feel free to help us by implementing any of this functionalities !
 - clean some issues opened for a long time on github
 - create new sample to show how to load sounds and musics at the same time (we need to respect specific order: sound at first, then music...)
 - replace pixel.c file by asm version to improve performances and provide function to draw pixels
+- improve the current text system to draw on any background. See the .c example created by [Digifox](https://github.com/malayli/snes-bg3-text)
 
 # Low priority:
 
