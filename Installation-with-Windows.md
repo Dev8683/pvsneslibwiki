@@ -103,9 +103,7 @@ You can download the latest version of the tool [here](https://sourceforge.net/p
 
 Download emulators to test your homebrews and put them in the emulators directory (see unzipped devkitsnes, you will have the directory **C:/snesdev/emulators**).  
 
-[bsnesplus beta](http://revenant1.net/bsnes-plus-benny-win64.zip)
-
-[bsnesplus](https://github.com/devinacker/bsnes-plus/releases)
+[bsnesplus beta](https://revenant1.net/bsnes/build/)
 
 [no$sns](http://problemkaputt.de/sns.htm)
 
