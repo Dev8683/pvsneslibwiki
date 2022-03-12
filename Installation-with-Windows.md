@@ -49,7 +49,7 @@ You will get issues like `LOAD_FILE_DATA: Could not open file "/usr/local/xxx.ob
 
 #### Python
 
-To use the c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **c:\python27**.
+To use the c source code optimizer, you also need to have **Python** on your PC. Just download it from PortableDev website and install it in **C:\Python27**.
 
 <a id="python27" href="https://www.portabledev.com/wp-content/files/python-2.7.9.msi">Python 2.7</a>
 
