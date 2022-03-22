@@ -11,6 +11,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 - [Where comes from PVSnesLib name ?](#MiscSection_5)
 - [I would like to share my project with PVSneslib community](#MiscSection_6)
 - [Is it possible to use Docker ?](#MiscSection_7)
+- [How to update WLA submodule to the latest commit ?](#MiscSection_8)
 
 **[About the lib](#AboutPVsneslib)**
 
@@ -76,6 +77,10 @@ In this case, we recommend you to upload it on your github page and create a wik
 ### <a name="MiscSection_7"/>Is it possible to use Docker ?
 
 Yes, some people worked on it and created a docker image that you can find [here](https://github.com/Crazy-Piri/pvsneslib-docker)
+
+### <a name="MiscSection_8"/>How to update WLA submodule to the latest commit ?
+
+You just need to execute `git submodule update --remote --merge` but please keep in mind that upgrading WLA has often impact on PVSneslib and require to be fully tested.
 
 ---
 
