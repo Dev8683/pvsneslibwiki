@@ -11,9 +11,9 @@ I will also consider that these tools are mandatory everywhere so i will not add
 To avoid forgetting it later, we can begin from this point. Just create an environment variable **PVSNESLIB_HOME**
 pointing on your pvsneslib directory.
 
-For example : /c/snesdev
+For example : /c/pvsneslib
 
-Be careful: the path must be in Unix style (/c/ instead of c:\) on Windows too !
+Be careful: the path must be in Unix style (/c/ instead of c:\\) on Windows too !
 Do not forget that if you change your environment variable, you will probably need to launch a new command prompt
 to take it into account.
 
@@ -35,6 +35,8 @@ To install tcc, you will need :
 
 In the compiler folder, you can run the `make tcc` command. It will run the configuration script (to generate configurations files).
 Once finished, you can run `make tcc-install` to move it to devkitsnes directory.
+
+If you did not installed texi2html, the step to generate the documentation will be ignored.
 
 ### WLA
 
@@ -58,6 +60,8 @@ It will build tcc then wla.
 
 ## Build PVSneslib
 
+To install PVSneslib, you will need :
+
  * Python 3
  * doxygen for documentation (optional)
 
@@ -65,7 +69,14 @@ To build PVSneslib, **PVSNESLIB_HOME** environment variable have to be defined. 
 
 Tools and compiler should be compiled and installed before too !
 
+Python is used to optimize the code produced by TCC, it needs to be added in your path and accessible directly from the **python** command.
+If the command `python --version` does not work on your computer, you will have issues while using the script in PVsneslib.
+
+_Please note that the code is still compatible with Python 2 but we do not recommend to use this old version._
+
 Go to pvsneslib directory and run the `make` command. There is no the `make install` because it generate automatically the files in the final directory.
+
+If you did not installed Doxygen, the step to generate the documentation will be ignored.
 
 
 ## Build sample
