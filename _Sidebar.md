@@ -1,7 +1,7 @@
 # Installation #
 
   1. **[Installation with Windows](https://github.com/alekmaul/pvsneslib/wiki/Installation-with-Windows)**
-  1. **[PVSneslib and Programmer Notepad](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad)**
+  1. **[PVSneslib and Visual Studio Code](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Visual-Studio-Code)**
   1. **[First steps with No$sns emulator](https://github.com/alekmaul/pvsneslib/wiki/First-steps-with-No$sns-emulator)**
   1. **[Compiling from sources](https://github.com/alekmaul/pvsneslib/wiki/Compiling-from-sources)**
 
