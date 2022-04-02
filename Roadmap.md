@@ -29,6 +29,7 @@ Feel free to help us by implementing any of this functionalities !
 
 # Low priority:
 
+- Fix cygwin and gitbash incompatibility
 - Improve mode 7 camera rotation
 - Add capabilities to create HIrom games
 - Add a check (in tcc or in other tool?) to compare the signature of functions between .c and .h file and trigger an error if they are different (it can save a lot of time to developers because this difference is hard to see and produce strange result)
