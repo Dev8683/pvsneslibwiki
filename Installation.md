@@ -19,12 +19,13 @@ If you want to go further and build the latest version from sources, you can fol
 
 As PVSneslib works on different operating system, it is hard to cover all cases, specifically on Linux which have a lot of differences.
 As you have probably a package management tool installed, it is more easy to do it from command line and i will provide some instructions using the **apt-get** tool which download packages from APT repository.
+
 **Feel free to adapt it for your version !**
 
 
-## Required dependencies
+### Required dependencies
 
-## MSYS (step required for Windows only)
+#### MSYS (step required for Windows only)
 
 PVsneslib need application to run scripts and makefiles like you do on Linux environments.
 If you work on Linux, please ignore this step but on Windows, you will need a tool to do it : MSYS.
@@ -34,49 +35,49 @@ You can install it everywhere on your computer but the path need to be added in 
 
 Other tools as **git bash** or **cygwin** are not compatible for now.
 
-## GCC
+#### GCC
 
 Depending on the tools already installed on your computer, you may need to install GCC too. For example, you will have to install it if you encounter this error building projects which use smconv tool (like the mario-like sample) :
 
-[smConv error](https://user-images.githubusercontent.com/981773/120016823-5e926300-bfe5-11eb-9ec3-c76223072ae0.png)
+![smConv error](https://user-images.githubusercontent.com/981773/120016823-5e926300-bfe5-11eb-9ec3-c76223072ae0.png)
 
 It is also necessary if you want to build yourself some tools in devkitsnes (like smconv !).
 
-### On Windows
+##### On Windows
 
 You can download the latest version of the tool [here](https://sourceforge.net/projects/tdm-gcc/) but we recommend you to get the 32 bit one, as we advised you for other tools!
 
-### On Linux
+##### On Linux
 
 As explained before, i will show the command line using apt-get tool.
 By running this command line, you will have gcc :
 `sudo apt install gcc`
 
-## Python 3
+#### Python 3
 
-### On Windows
+##### On Windows
 
 Download and install the latest version of [python 3](https://www.python.org/downloads/windows/) compatible with your OS version.
 
-### On Linux
+##### On Linux
 
 You just need to run :
 `sudo apt install python3`
 
-### Check that it works!
+##### Check that it works!
 
 Python is used to optimize the code produced, it needs to be added in your path and accessible directly from the python command. If the command `python --version` does not work on your computer, you will have issues while using the script in PVsneslib.
 
 Please note that the code is still compatible with Python 2 but we do not recommend to use this old version.
 
 
-## Text editor
+#### Text editor
 
 Any text editor will allow you to write your code but you will need to use a terminal beside to execute the `make` commands to build your project.
 
-For convenience reasons, we recommend to use Visual Studio Code which is cross platform. To do it, you can follow this wiki page.
+For convenience reasons, we recommend to use Visual Studio Code which is cross platform. To do it, you can follow this [Wiki page](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Visual-Studio-Code).
 
-## Emulator
+#### Emulator
 
 A lot of emulators for the Super Nintendo SNES are available and the behaviour of your code can be different depending the one you use.
 If you are on Windows, we directly recommend to use [no$snes](https://problemkaputt.de/sns.htm) which contains usefull functionalities.
@@ -85,14 +86,14 @@ Otherwise, you can use [Mesen-S](https://www.mesen.ca/) which is a high-accuracy
 
 You can use any other emulator you want but in all cases, it is important to test you rom on different one which wich works as nearest possible than the real hardware.
 
-## Installing PVSnesLib
+### Installing PVSnesLib
 
 From the version 3.5.0 (May 2022), PVsneslib is now packaged in one zip to ease the installation.
 
 The first thing you need is to download the latest version of PVsneslib then extract it where you want.
 Then, you need to create a new environment variable **PVSNESLIB_HOME** to provide the path to this directory.
 
-### On windows
+#### On windows
 
 You could extract it under `C:/snesdev` directory.
 You can set **PVSNESLIB_HOME** to `/c/snesdev` by using this command line: `setx PVSNESLIB_HOME "/c/snesdev"`, or you can set it manually like it is shown below:
@@ -102,27 +103,23 @@ You can set **PVSNESLIB_HOME** to `/c/snesdev` by using this command line: `setx
 **Be careful**: the path must be in Unix style (`/c/` instead of `c:\`) on Windows too ! Do not forget that if you change your environment variable, you will probably need to launch a new command prompt to take it into account.
 
 
-### On Linux
+#### On Linux
 
 Depending your distribution, you have different ways to create this variable.
 
 If you want to declare the variable only for the current terminal session, you can execute :
 `export PVSNESLIB_HOME=/path/to/pvsneslib`
 
-But if you do not want to execute this command before using the library, you can add it to the file **.profile** or your login shell profile file located in your home directory.
+But if you do not want to execute this command before using the library, you can add it to the file **.profile** located in your home directory.
 
-Open the terminal and execute this commands :
+Open the terminal and execute this commands after editing the path with your own:
 
-`cd` will change the directory to the home directory of your user
+`cd && echo export PVSNESLIB_HOME=/path/to/pvsneslib >> .profile`
 
-edit the path to correspond with your own then execute :
-
-`echo export PVSNESLIB_HOME=/path/to/pvsneslib >> .profile`
-
-## It is ready !
+### It is ready !
 
 
-Now everything is installed correctly, you can validate that it works correctly by compiling the hello world sample. Just go under your installation path, snes-examples>hello_world and run the `make` command.
+Now everything is installed correctly, you can validate that it works correctly by compiling the hello world sample. Just go under your installation path, snes-examples > hello_world and run the `make` command.
 
 
-If you encounter an issue or for any remarks, please join us on Discord !
+If you encounter an issue, join us on Discord to get help!
