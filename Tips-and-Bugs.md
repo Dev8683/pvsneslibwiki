@@ -63,12 +63,12 @@ struct dma_transfer {
   unsigned char src_bank; / 2 / 
   unsigned short dest; / 3 + 4 / 
   unsigned short size; / 5 + 6 / 
-  unsigned char type; / 7 */ } 
+  unsigned char type; / 7 */ 
+} 
 attribute((packed));
 ```
 
-This structure is 10 bytes instead of 8. (Is there a point in aligning stuff on the 65816 at all?)
-This is because tcc doesn't support it.
+This structure is 10 bytes instead of 8. (Is there a point in aligning stuff on the 65816 at all?). This is because tcc doesn't support it.
 
 What you can do is to set attribute((packed)) on all members of the struct to solve it.
 
