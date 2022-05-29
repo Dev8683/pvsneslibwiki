@@ -55,6 +55,23 @@ union ptr {
 };
 ```
 
+### __attribute__((packed)) doesn't work
+
+```
+struct dma_transfer { 
+  unsigned short src_addr; /* 0 + 1 / 
+  unsigned char src_bank; / 2 / 
+  unsigned short dest; / 3 + 4 / 
+  unsigned short size; / 5 + 6 / 
+  unsigned char type; / 7 */ } 
+attribute((packed));
+```
+
+This structure is 10 bytes instead of 8. (Is there a point in aligning stuff on the 65816 at all?)
+This is because tcc doesn't support it.
+
+What you can do is to set attribute((packed)) on all members of the struct to solve it.
+
 ### Shiru's tips
 
 Here are some others tips that [Shiru](http://shiru.untergrund.net/articles/programming_nes_games_in_c.htm) wrote about cc65 compiler but they can also aplied to 816-tcc compiler.  
