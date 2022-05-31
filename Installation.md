@@ -53,6 +53,8 @@ As explained before, i will show the command line using apt-get tool.
 By running this command line, you will have gcc :
 `sudo apt install gcc`
 
+_To confirm, gcc-multilib seems to be mandatory to use gfx2snes. If someone can confirm us this point, we will update this page_
+
 #### Python 3
 
 ##### On Windows
