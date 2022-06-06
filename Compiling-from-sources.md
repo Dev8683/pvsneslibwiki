@@ -17,6 +17,8 @@ Be careful: the path must be in Unix style (/c/ instead of c:\\) on Windows too 
 Do not forget that if you change your environment variable, you will probably need to launch a new command prompt
 to take it into account.
 
+Please remember that **PVSNESLIB_HOME** variable **CANNOT contains spaces**.
+
 ## Build the tools
 
 To build the tools and because you already installed msys and GCC, you will not need other dependencies!
