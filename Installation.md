@@ -95,7 +95,7 @@ From the version 3.5.0 (May 2022), PVsneslib is now packaged in one zip to ease 
 The first thing you need is to download the latest version of PVsneslib then extract it where you want.
 Then, you need to create a new environment variable **PVSNESLIB_HOME** to provide the path to this directory.
 
-Please remember that **PVSNESLIB_HOME** variable **CANNOT contains spaces**.
+Please remember that **PVSNESLIB_HOME** variable (or any folder you will create under its tree) **CANNOT contains spaces**.
 
 #### On windows
 
