@@ -120,6 +120,10 @@ Open the terminal and execute this commands after editing the path with your own
 
 `cd && echo export PVSNESLIB_HOME=/path/to/pvsneslib >> .profile`
 
+It will add this variable to your .profile file, you now need to reload it to take this change into account.
+
+To do it, just launch `source ~/.profile` command in your terminal.
+
 If you want to use the **~** character to point on your home directory, you can also do it like that : `export PVSNESLIB_HOME=~/pvsneslib`
 
 ### It is ready !
