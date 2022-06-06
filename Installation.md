@@ -118,6 +118,8 @@ Open the terminal and execute this commands after editing the path with your own
 
 `cd && echo export PVSNESLIB_HOME=/path/to/pvsneslib >> .profile`
 
+If you want to use the **~** character to point on your home directory, you can also do it like that : `export PVSNESLIB_HOME=~/pvsneslib`
+
 ### It is ready !
 
 
