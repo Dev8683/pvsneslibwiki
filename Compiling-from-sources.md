@@ -17,7 +17,7 @@ Be careful: the path must be in Unix style (/c/ instead of c:\\) on Windows too 
 Do not forget that if you change your environment variable, you will probably need to launch a new command prompt
 to take it into account.
 
-Please remember that **PVSNESLIB_HOME** variable **CANNOT contains spaces**.
+Please remember that **PVSNESLIB_HOME** variable (or any folder you will create under its tree) **CANNOT contains spaces**.
 
 ## Build the tools
 
