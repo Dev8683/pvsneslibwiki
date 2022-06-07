@@ -13,6 +13,7 @@ Feel free to help us by implementing any of this functionalities !
 - solve the segmentation fault wich appears in tcc when using it without the -m32 flag (requirement to have 64b version). Try to apply these 2 updates manually to see if it works :
 	- [cleanup: stop abuse of sym->c for #define tokenstreams](https://github.com/adorad/tcc/commit/bed17847bdfa872e219a12237e06df83e464bdba)
 	- [cleanup: stop abuse of sym->r for inline functions](https://github.com/adorad/tcc/commit/d0b432ab38b09cd167d8a8065ffe1e14878d6e2d?diff=split)
+- manage LZ compression for graphics
 
 # Medium priority:
 
