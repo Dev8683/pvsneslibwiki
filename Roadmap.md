@@ -41,3 +41,4 @@ Feel free to help us by implementing any of this functionalities !
 - add new check on variable PVSNESLIB_DEBUG to provide detailed informations during the build process to assist users when they begin to use the library. For example: if you use setmode with mode7, display an error saying to use setmode7 function instead. It is a kind of assert which could be managed in asm with .FAIL directive. By default, the library could be built without this variable and it will not decrease performances
 - Add mouse driver compatibility
 - Add superscope compatibility
+- Add all needed extensions for C/C++ and vscode (like Intellisense, etc ...) in wiki part of vscode template
